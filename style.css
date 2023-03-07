@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&display=swap');
+
+* {
+  font-family: "JetBrains Mono", monospace;
+}
+
+body {
+  margin: 15px;
+  min-height: calc(100vh - 30px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  color: #fff7ad;
+}
+
+a {
+  color: #ffffff;
+  background-color: #0d002c;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: rgb(7, 6, 75);
+}
+
+.content {
+  margin: 0;
+  font-size: 0.95em;
+}
+
+.inline-block {
+    color: #ffffff;
+    background-color: #1f1f1f;
+}
+
+.pink {
+    background-color: #680d3b;
+    color: #ffffff;
+}
+
+.comment {
+    color: #bababa;
+    font-style: italic;
+}
+
+.php {
+    color: #ffffff;
+    background-color: #57245eaa;
+}
+
+.java {
+    color: #ffffff;
+    background-color: #b07219aa;
+}
+
+.js {
+    color: #ffffff;
+    background-color: #b39800aa;
+}
+
+.node {
+    color: #ffffff;
+    background-color: #357500aa;
+}
+
+.discord {
+    color: #ffffff;
+    background-color: #0f1183aa;
+}
+
+.youtube {
+    color: #ffffff;
+    background-color: #ff4444aa;
+}
+
+.team {
+    color: #ffffff;
+    background-color: #f52e2eaa;
+}
