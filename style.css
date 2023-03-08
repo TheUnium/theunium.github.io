@@ -54,14 +54,39 @@ a:hover {
     background-color: #b07219aa;
 }
 
+.cfamily {
+    color: #ffffff;
+    background-color: #004f8f;
+}
+
 .js {
     color: #ffffff;
     background-color: #b39800aa;
 }
 
+.lua {
+    color: #ffffff;
+    background-color: #0c00b3aa;
+}
+
 .node {
     color: #ffffff;
     background-color: #357500aa;
+}
+
+.python {
+    color: #ffffff;
+    background-color: #bb9900aa;
+}
+
+.asm {
+    color: #ffffff;
+    background-color: #56be00aa;
+}
+
+.htmlcss {
+    color: #ffffff;
+    background-color: #9e3f00aa;
 }
 
 .discord {
