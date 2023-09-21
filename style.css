@@ -24,6 +24,11 @@ a:hover {
   background-color: rgb(7, 6, 75);
 }
 
+.header {
+    margin: 0;
+    font-size: 32px;
+}
+
 .content {
   margin: 0;
   font-size: 0.95em;
