@@ -12,14 +12,23 @@
     <meta property="og:url" content="https://theunium.github.io/"/>
 
     <!-- ily 98.css -->
-    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <link rel="stylesheet" href="css/c98.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <div class="desktop">
-    <div class="window" style="width: 320px;z-index: 9;" id="win1">
+    <div class="window" style="width: 320px;z-index: 9;" id="window_aboutme_1">
         <div class="title-bar" id="tb">
+            <img
+                    src="https://yt3.googleusercontent.com/DoZc6w3G4obmv32bQsRk3p74MnbLXgTRl4MNav_6jy-PVxJwGox-ys7ju8XtQqFHCymiOOhyaA=s176-c-k-c0x00ffffff-no-rj"
+                    width="16"
+                    height="16"
+                    alt="task icon"
+            >
             <div class="title-bar-text">unium.exe</div>
+            <div class="title-bar-controls">
+                <button aria-label="Close" onclick="closeWindow('window_aboutme_1')"></button>
+            </div>
         </div>
         <div class="window-body">
             <p class="unium">theunium.github.io 🇮🇳</p>
@@ -32,9 +41,18 @@
         </div>
     </div>
 
-    <div class="window" style="width: 320px;" id="win2">
+    <div class="window" style="width: 320px;" id="window_aboutme_2">
         <div class="title-bar">
+            <img
+                    src="https://yt3.googleusercontent.com/DoZc6w3G4obmv32bQsRk3p74MnbLXgTRl4MNav_6jy-PVxJwGox-ys7ju8XtQqFHCymiOOhyaA=s176-c-k-c0x00ffffff-no-rj"
+                    width="16"
+                    height="16"
+                    alt="task icon"
+            >
             <div class="title-bar-text">unium.exe - contact me</div>
+            <div class="title-bar-controls">
+                <button aria-label="Close" onclick="closeWindow('window_aboutme_2')"></button>
+            </div>
         </div>
         <div class="window-body">
             <ul>
@@ -45,9 +63,18 @@
         </div>
     </div>
 
-    <div class="window" style="width: 320px;" id="win3">
+    <div class="window" style="width: 320px;" id="window_aboutme_3">
         <div class="title-bar">
+            <img
+                    src="https://yt3.googleusercontent.com/DoZc6w3G4obmv32bQsRk3p74MnbLXgTRl4MNav_6jy-PVxJwGox-ys7ju8XtQqFHCymiOOhyaA=s176-c-k-c0x00ffffff-no-rj"
+                    width="16"
+                    height="16"
+                    alt="task icon"
+            >
             <div class="title-bar-text">unium.exe - generic yapping</div>
+            <div class="title-bar-controls">
+                <button aria-label="Close" onclick="closeWindow('window_aboutme_3')"></button>
+            </div>
         </div>
         <div class="window-body">
             <p>i like a bunch of stuff, but the main things i like are :</p>
@@ -61,9 +88,18 @@
         </div>
     </div>
 
-    <div class="window" style="width: 320px;" id="win4">
+    <div class="window" style="width: 320px;" id="window_aboutme_4">
         <div class="title-bar">
+            <img
+                    src="https://yt3.googleusercontent.com/DoZc6w3G4obmv32bQsRk3p74MnbLXgTRl4MNav_6jy-PVxJwGox-ys7ju8XtQqFHCymiOOhyaA=s176-c-k-c0x00ffffff-no-rj"
+                    width="16"
+                    height="16"
+                    alt="task icon"
+            >
             <div class="title-bar-text">unium.exe - experience</div>
+            <div class="title-bar-controls">
+                <button aria-label="Close" onclick="closeWindow('window_aboutme_4')"></button>
+            </div>
         </div>
         <div class="window-body">
             <p>ive been programming for around 8 years, and been using C, PHP, and java for the majority of my time</p>
@@ -85,6 +121,54 @@
         </div>
     </div>
 
+    <div class="window" style="width: 600px; display:none;" id="window_terminal">
+        <div class="title-bar">
+            <img
+                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn0.iconfinder.com%2Fdata%2Ficons%2Fsoftware-4%2F24%2Fconsole_command_prompt_shell_program-1024.png&f=1&nofb=1&ipt=997024a51ba6e575b8d0bbeaf18ea9b9d87f2d8654e725f5d3f7902935def24c&ipo=images"
+                    width="16"
+                    height="16"
+                    alt="task icon"
+            >
+            <div class="title-bar-text">Terminal</div>
+            <div class="title-bar-controls">
+                <button aria-label="Close" onclick="closeWindow('window_terminal')"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="terminal">
+                <div class="terminal-output" id="terminal-output">
+                </div>
+                <div class="input-line">
+                    <span class="prompt">C:\></span>
+                    <input type="text" class="terminal-input" id="terminal-input" autofocus>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="window chrome" style="width: 800px; height:800px; display:none;" id="window_chrome">
+        <div class="title-bar">
+            <img
+                    src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Flofrev.net%2Fwp-content%2Fphotos%2F2016%2F06%2Fgoogle-chrome-logo.png&f=1&nofb=1&ipt=8127467667284abf78f2d9520bbc5c0252e41bc860f4ebc54f19cbc3f6745ad9&ipo=images"
+                    width="16"
+                    height="16"
+                    alt="task icon"
+            >
+            <div class="title-bar-text">Google Chrome</div>
+            <div class="title-bar-controls">
+                <button aria-label="Close" onclick="closeWindow('window_chrome')"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="url-bar">
+                <input type="text" id="chrome-url-bar" placeholder="Enter URL" onkeydown="checkKey(event)" spellcheck="false">
+                <button onclick="refreshChrome()" title="Refresh">&#x21bb;</button>
+                <button onclick="goToHome()" title="Go to Home">&#8962;</button>
+            </div>
+            <iframe src="https://www.google.com/webhp?igu=1" id="chrome-screen" frameborder="0" style="width: 100%; height: 725px;"></iframe>
+        </div>
+    </div>
+
     <div class="taskbar">
         <div class="start-button">
             <button>
@@ -99,14 +183,38 @@
         </div>
 
         <div class="unium-task-button">
-            <button>
+            <button onclick="showAboutMeWindows()">
                 <img
                         src="https://yt3.googleusercontent.com/DoZc6w3G4obmv32bQsRk3p74MnbLXgTRl4MNav_6jy-PVxJwGox-ys7ju8XtQqFHCymiOOhyaA=s176-c-k-c0x00ffffff-no-rj"
                         width="16"
                         height="16"
                         alt="task icon"
                 >
-                <b>unium's about me</b>
+                <b>Portfolio</b>
+            </button>
+        </div>
+
+        <div class="email-button">
+            <button onclick="showWindow('window_terminal')">
+                <img
+                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn0.iconfinder.com%2Fdata%2Ficons%2Fsoftware-4%2F24%2Fconsole_command_prompt_shell_program-1024.png&f=1&nofb=1&ipt=997024a51ba6e575b8d0bbeaf18ea9b9d87f2d8654e725f5d3f7902935def24c&ipo=images"
+                        width="16"
+                        height="16"
+                        alt="task icon"
+                >
+                <b>Terminal</b>
+            </button>
+        </div>
+
+        <div class="email-button">
+            <button onclick="showWindow('window_chrome')">
+                <img
+                        src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Flofrev.net%2Fwp-content%2Fphotos%2F2016%2F06%2Fgoogle-chrome-logo.png&f=1&nofb=1&ipt=8127467667284abf78f2d9520bbc5c0252e41bc860f4ebc54f19cbc3f6745ad9&ipo=images"
+                        width="16"
+                        height="16"
+                        alt="task icon"
+                >
+                <b>Google Chrome</b>
             </button>
         </div>
 
@@ -118,7 +226,7 @@
                         height="16"
                         alt="task icon"
                 >
-                <b>email me</b>
+                <b>Email me</b>
             </button>
         </div>
 
@@ -141,5 +249,6 @@
 </div>
 
 <script src="js/script.js"></script>
+<script src="js/console.js"></script>
 </body>
 </html>
