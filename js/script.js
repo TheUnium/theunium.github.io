@@ -1,21 +1,4 @@
-function updateTime() {
-    const timeButton = document.getElementById('time-button');
-    timeButton.textContent = new Date().toLocaleTimeString();
-}
-
-function email() {
-    window.location.href = "mailto:theunium@skiff.com";
-}
-
-document.getElementById("current_year").innerHTML = new Date().getFullYear();
-setInterval(updateTime, 1000);
-updateTime();
-
-dragElement(document.getElementById("win1"));
-dragElement(document.getElementById("win2"));
-dragElement(document.getElementById("win3"));
-dragElement(document.getElementById("win4"));
-function dragElement(e){var n=0,t=0,o=0,l=0;function u(u){(u=u||window.event).preventDefault(),n=o-u.clientX,t=l-u.clientY,o=u.clientX,l=u.clientY,e.style.top=e.offsetTop-t+"px",e.style.left=e.offsetLeft-n+"px"}function f(){document.onmouseup=null,document.onmousemove=null}e.onmousedown=function e(n){(n=n||window.event).preventDefault(),o=n.clientX,l=n.clientY,document.onmouseup=f,document.onmousemove=u}}
+function updateTime(){const timeButton=document.getElementById('time-button');timeButton.textContent=new Date().toLocaleTimeString()}function closeWindow(windowId){var windowElement=document.getElementById(windowId);windowElement.style.display="none"}function showAboutMeWindows(){document.getElementById('window_aboutme_1').style.display="block";document.getElementById('window_aboutme_2').style.display="block";document.getElementById('window_aboutme_3').style.display="block";document.getElementById('window_aboutme_4').style.display="block"}function showWindow(window){document.getElementById(window).style.display="block"}function checkKey(event){if(event.key==="Enter"){var url=document.getElementById('chrome-url-bar').value.trim().toLowerCase();var displayUrl="";if(url.length===0){return}if(!url.startsWith("http://")&&!url.startsWith("https://")){url="https://"+url}if(url.includes("google.com")){url='https://www.google.com/webhp?igu=1';displayUrl="https://www.google.com"}else{displayUrl=url}document.getElementById('chrome-url-bar').value=displayUrl;document.getElementById('chrome-screen').src=url}}function refreshChrome(){var chromeScreen=document.getElementById('chrome-screen');chromeScreen.src+=''}function goToHome(){var homeUrl='https://www.google.com/webhp?igu=1';document.getElementById('chrome-url-bar').value=homeUrl;document.getElementById('chrome-screen').src=homeUrl}function dragElement(elmnt){var pos1=0,pos2=0,pos3=0,pos4=0;var titleBar=elmnt.querySelector('.title-bar');if(titleBar){titleBar.onmousedown=dragMouseDown}function dragMouseDown(e){if(e.target===titleBar){e=e||window.event;e.preventDefault();pos3=e.clientX;pos4=e.clientY;document.onmouseup=closeDragElement;document.onmousemove=elementDrag}}function elementDrag(e){e=e||window.event;e.preventDefault();pos1=pos3-e.clientX;pos2=pos4-e.clientY;pos3=e.clientX;pos4=e.clientY;elmnt.style.top=(elmnt.offsetTop-pos2)+"px";elmnt.style.left=(elmnt.offsetLeft-pos1)+"px"}function closeDragElement(){document.onmouseup=null;document.onmousemove=null}}dragElement(document.getElementById("window_aboutme_1"));dragElement(document.getElementById("window_aboutme_2"));dragElement(document.getElementById("window_aboutme_3"));dragElement(document.getElementById("window_aboutme_4"));dragElement(document.getElementById("window_terminal"));dragElement(document.getElementById("window_chrome"));function email(){window.location.href="mailto:theunium@skiff.com"}document.getElementById("current_year").innerHTML=new Date().getFullYear();setInterval(updateTime,1000);updateTime();
 
 // from : https://znci.dev/js/index.js
 const isMobile = window.matchMedia("(max-width: 862px)").matches;
