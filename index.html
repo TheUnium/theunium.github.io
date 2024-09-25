@@ -3,253 +3,278 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>the unium</title>
-    <link rel="icon" type="image/x-icon" href="https://yt3.googleusercontent.com/DoZc6w3G4obmv32bQsRk3p74MnbLXgTRl4MNav_6jy-PVxJwGox-ys7ju8XtQqFHCymiOOhyaA=s176-c-k-c0x00ffffff-no-rj">
+    <title>theunium.github.io</title>
     <meta name="theme-color" content="#E64D40"/>
     <meta name="description" content="little portfolio site, also hello there :O"/>
     <meta property="twitter:description" content="lil personal site, also hello there :O"/>
     <meta property="og:description" content="lil personal site, also hello there :O"/>
     <meta property="og:url" content="https://theunium.github.io/"/>
-
-    <!-- ily 98.css -->
-    <link rel="stylesheet" href="css/c98.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes glitch {
+            0% { transform: translate(0) }
+            20% { transform: translate(-1px, 1px) }
+            40% { transform: translate(-1px, -1px) }
+            60% { transform: translate(1px, 1px) }
+            80% { transform: translate(1px, -1px) }
+            100% { transform: translate(0) }
+        }
+        .hover-glitch:hover {
+            animation: glitch 0.4s ease infinite;
+        }
+    </style>
 </head>
-<body>
-<div class="desktop">
-    <div class="window" style="width: 320px;z-index: 9;" id="window_aboutme_1">
-        <div class="title-bar" id="tb">
-            <img
-                    src="https://yt3.googleusercontent.com/DoZc6w3G4obmv32bQsRk3p74MnbLXgTRl4MNav_6jy-PVxJwGox-ys7ju8XtQqFHCymiOOhyaA=s176-c-k-c0x00ffffff-no-rj"
-                    width="16"
-                    height="16"
-                    alt="task icon"
-            >
-            <div class="title-bar-text">unium.exe</div>
-            <div class="title-bar-controls">
-                <button aria-label="Close" onclick="closeWindow('window_aboutme_1')"></button>
+<body class="bg-gray-900 text-gray-300 font-mono">
+    <div class="flex flex-col h-screen">
+        <div class="bg-gray-800 p-2 flex items-center">
+            <div class="flex space-x-2 mr-4">
+                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                <div class="w-3 h-3 rounded-full bg-green-500"></div>
             </div>
+            <span class="text-sm md:hidden">CINotCode (Not VSCode!)</span>
+            <span class="text-sm hidden md:block">Command Indie Not-Code (totally not Visual Studio Code!)</span>
         </div>
-        <div class="window-body">
-            <p class="unium">theunium.github.io 🇮🇳</p>
-            <p>hi!, i'm unium, an indian <a href="#projects">developer</a>, artist and a <a href="./game-library.html">GaMeR</a>.</p>
-        </div>
-        <div class="status-bar">
-            <p class="status-bar-field">theunium@skiff.com</p>
-            <p class="status-bar-field">discord: leunium</p>
-            <p class="status-bar-field">twitter: @leunium</p>
-        </div>
-    </div>
 
-    <div class="window" style="width: 320px;" id="window_aboutme_2">
-        <div class="title-bar">
-            <img
-                    src="https://yt3.googleusercontent.com/DoZc6w3G4obmv32bQsRk3p74MnbLXgTRl4MNav_6jy-PVxJwGox-ys7ju8XtQqFHCymiOOhyaA=s176-c-k-c0x00ffffff-no-rj"
-                    width="16"
-                    height="16"
-                    alt="task icon"
-            >
-            <div class="title-bar-text">unium.exe - contact me</div>
-            <div class="title-bar-controls">
-                <button aria-label="Close" onclick="closeWindow('window_aboutme_2')"></button>
+        <div class="flex flex-1 overflow-hidden">
+            <div class="w-48 bg-gray-800 p-2 hidden md:block">
+                <div class="text-xs text-gray-500 mb-2">EXPLORER</div>
+                <div class="text-sm font-bold mb-1">THEUNIUM.GITHUB.IO</div>
+                <div class="text-sm ml-2 cursor-pointer hover:text-blue-400 transition-colors duration-200" onclick="showSection('home')">index.html</div>
+                <div class="text-sm ml-2 cursor-pointer hover:text-blue-400 transition-colors duration-200" onclick="showSection('projects')">projects.html</div>
+                <div class="text-sm ml-2 cursor-pointer hover:text-blue-400 transition-colors duration-200" onclick="showSection('about')">about.html</div>
+                <div class="text-sm ml-2 cursor-pointer hover:text-blue-400 transition-colors duration-200" onclick="showSection('contact')">contact.html</div>
+                <div class="text-sm ml-2 cursor-pointer hover:text-blue-400 transition-colors duration-200" onclick="showSection('copyright')">copyright.txt</div>
             </div>
-        </div>
-        <div class="window-body">
-            <ul>
-                <li>email → <a href="mailto:theunium@skiff.com">theunium@skiff.com</a></li>
-                <li>github → <a href="https://github.com/TheUnium">https://github.com/TheUnium</a></li>
-                <li>website → <a href="https://theunium.github.io">you are already here... (theunium.github.io)</a></li>
-            </ul>
-        </div>
-    </div>
 
-    <div class="window" style="width: 320px;" id="window_aboutme_3">
-        <div class="title-bar">
-            <img
-                    src="https://yt3.googleusercontent.com/DoZc6w3G4obmv32bQsRk3p74MnbLXgTRl4MNav_6jy-PVxJwGox-ys7ju8XtQqFHCymiOOhyaA=s176-c-k-c0x00ffffff-no-rj"
-                    width="16"
-                    height="16"
-                    alt="task icon"
-            >
-            <div class="title-bar-text">unium.exe - generic yapping</div>
-            <div class="title-bar-controls">
-                <button aria-label="Close" onclick="closeWindow('window_aboutme_3')"></button>
-            </div>
-        </div>
-        <div class="window-body">
-            <p>i like a bunch of stuff, but the main things i like are :</p>
-            <ul>
-                <li>dogs</li>
-                <li>science (biology)</li>
-                <li>art, programming</li>
-                <li>football, boxing, wrestling</li>
-            </ul>
-            <p>for my dislikes, it's basically just those stupid child safe lock things in car that turn on by themselves</p>
-        </div>
-    </div>
-
-    <div class="window" style="width: 320px;" id="window_aboutme_4">
-        <div class="title-bar">
-            <img
-                    src="https://yt3.googleusercontent.com/DoZc6w3G4obmv32bQsRk3p74MnbLXgTRl4MNav_6jy-PVxJwGox-ys7ju8XtQqFHCymiOOhyaA=s176-c-k-c0x00ffffff-no-rj"
-                    width="16"
-                    height="16"
-                    alt="task icon"
-            >
-            <div class="title-bar-text">unium.exe - experience</div>
-            <div class="title-bar-controls">
-                <button aria-label="Close" onclick="closeWindow('window_aboutme_4')"></button>
-            </div>
-        </div>
-        <div class="window-body">
-            <p>ive been programming for around 8 years, and been using C, PHP, and java for the majority of my time</p>
-            <p>however, i know other languages too :)</p>
-            <ul>
-                <li>c <b>(experienced)</b></li>
-                <li>c++ <b>(experienced)</b></li>
-                <li>php <b>(experienced)</b></li>
-                <li>java <b>(experienced)</b></li>
-                <li>html/css <b>(experienced)</b></li>
-                <li>javascript <b>(experienced)</b></li>
-                <li>python <b>(intermediate)</b></li>
-                <li>lua <b>(intermediate)</b></li>
-                <li>asm <b>(intermediate)</b></li>
-                <li>golang <b>(intermediate)</b></li>
-                <li>rust <b>(beginner)</b></li>
-                <li>fortan <b>(beginner)</b></li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="window" style="width: 600px; display:none;" id="window_terminal">
-        <div class="title-bar">
-            <img
-                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn0.iconfinder.com%2Fdata%2Ficons%2Fsoftware-4%2F24%2Fconsole_command_prompt_shell_program-1024.png&f=1&nofb=1&ipt=997024a51ba6e575b8d0bbeaf18ea9b9d87f2d8654e725f5d3f7902935def24c&ipo=images"
-                    width="16"
-                    height="16"
-                    alt="task icon"
-            >
-            <div class="title-bar-text">Terminal</div>
-            <div class="title-bar-controls">
-                <button aria-label="Close" onclick="closeWindow('window_terminal')"></button>
-            </div>
-        </div>
-        <div class="window-body">
-            <div class="terminal">
-                <div class="terminal-output" id="terminal-output">
+            <div class="flex-1 flex flex-col">
+                <div class="flex items-center px-2 py-1 bg-gray-800">
+                    <span class="mr-2 text-gray-500">← →</span>
+                    <span class="text-sm" id="current-file">index.html</span>
                 </div>
-                <div class="input-line">
-                    <span class="prompt">C:\></span>
-                    <input type="text" class="terminal-input" id="terminal-input" autofocus>
+                <div class="flex-1 bg-gray-900 p-4 overflow-auto">
+                    <section id="home" class="mb-8">
+                        <div class="md:hidden">
+                            <h1 class="text-3xl font-bold mb-4">theunium.github.io</h1>
+                            <h2 class="text-xl mb-4">hi!, i'm unium, an indian developer, artist and a GaMeR.</h2>
+                            <h2 class="text-2xl font-bold mb-2">Project I've worked on</h2>
+                            <ul class="list-disc pl-5 mb-8" id="home-projects-mobile">
+                            </ul>
+                            <h2 class="text-2xl font-bold mb-2">My skills</h2>
+                            <ul class="list-disc pl-5">
+                                <li>C (experienced)</li>
+                                <li>C++ (experienced)</li>
+                                <li>PHP (experienced)</li>
+                                <li>Java (experienced)</li>
+                                <li>HTML/CSS (experienced)</li>
+                                <li>JavaScript (experienced)</li>
+                                <li>Kotlin (intermediate)</li>
+                                <li>Python (intermediate)</li>
+                                <li>Lua (intermediate)</li>
+                                <li>ASM (intermediate)</li>
+                                <li>Golang (intermediate)</li>
+                                <li>Rust (beginner)</li>
+                                <li>Fortran (beginner)</li>
+                            </ul>
+                        </div>
+                
+                        <div class="hidden md:block">
+                        <pre class="text-sm">
+<span class="text-blue-400">&lt;!DOCTYPE html&gt;</span>
+<span class="text-blue-400">&lt;html lang="en"&gt;</span>
+<span class="text-blue-400">&lt;head&gt;</span>
+    <span class="text-blue-400">&lt;meta</span> <span class="text-green-400">charset</span>=<span class="text-yellow-300">"UTF-8"</span><span class="text-blue-400">&gt;</span>
+    <span class="text-blue-400">&lt;meta</span> <span class="text-green-400">name</span>=<span class="text-yellow-300">"viewport"</span> <span class="text-green-400">content</span>=<span class="text-yellow-300">"width=device-width, initial-scale=1.0"</span><span class="text-blue-400">&gt;</span>
+    <span class="text-blue-400">&lt;title&gt;</span>theunium.github.io<span class="text-blue-400">&lt;/title&gt;</span>
+<span class="text-blue-400">&lt;/head&gt;</span>
+<span class="text-blue-400">&lt;body&gt;</span>
+    <span class="text-blue-400">&lt;header&gt;</span>
+    <div class="hover-glitch">        <span class="text-blue-400 text-3xl">&lt;h1&gt;</span><span class="text-3xl">theunium.github.io</span><span class="text-blue-400 text-3xl">&lt;/h1&gt;</span>
+        <span class="text-blue-400 text-xl">&lt;h2&gt;</span><span class="text-xl">hi!, i'm unium, an indian developer, artist and a GaMeR.</span><span class="text-blue-400 text-xl">&lt;/h2&gt;</span></div>
+    <span class="text-blue-400">&lt;/header&gt;</span>
+    <span class="text-blue-400">&lt;main&gt;</span>
+        <span class="text-blue-400">&lt;section</span> <span class="text-green-400">id</span>=<span class="text-yellow-300">"projects"</span><span class="text-blue-400">&gt;</span>
+        <div id="home-projects">            <span class="text-blue-400 text-3xl">&lt;h1&gt;</span><span class="text-3xl">Project I've worked on</span><span class="text-blue-400 text-3xl">&lt;/h1&gt;</span>
+        </div>
+        <span class="text-blue-400">&lt;/section&gt;</span>
+        <span class="text-blue-400">&lt;section</span> <span class="text-green-400">id</span>=<span class="text-yellow-300">"skills"</span><span class="text-blue-400">&gt;</span>
+        <div>           <span class="text-blue-400 text-3xl">&lt;h1&gt;</span><span class="text-3xl">My skills</span><span class="text-blue-400 text-3xl">&lt;/h1&gt;</span>
+
+            <span class="text-blue-400 text-xl">&lt;h2&gt;</span><span class="text-xl">- <span class="text-blue-200">[C]</span> (experienced)</span><span class="text-blue-400 text-xl">&lt;/h2&gt;</span>
+            <span class="text-blue-400 text-xl">&lt;h2&gt;</span><span class="text-xl">- <span class="text-purple-200">[C++]</span> (experienced)</span><span class="text-blue-400 text-xl">&lt;/h2&gt;</span>
+            <span class="text-blue-400 text-xl">&lt;h2&gt;</span><span class="text-xl">- <span class="text-purple-200">[PHP]</span> (experienced)</span><span class="text-blue-400 text-xl">&lt;/h2&gt;</span>
+            <span class="text-blue-400 text-xl">&lt;h2&gt;</span><span class="text-xl">- <span class="text-red-200">[Java]</span> (experienced)</span><span class="text-blue-400 text-xl">&lt;/h2&gt;</span>
+            <span class="text-blue-400 text-xl">&lt;h2&gt;</span><span class="text-xl">- <span class="text-orange-200">[HTML/CSS]</span> (experienced)</span><span class="text-blue-400 text-xl">&lt;/h2&gt;</span>
+            <span class="text-blue-400 text-xl">&lt;h2&gt;</span><span class="text-xl">- <span class="text-yellow-200">[JavaScript]</span> (experienced)</span><span class="text-blue-400 text-xl">&lt;/h2&gt;</span>
+            <span class="text-blue-400 text-xl">&lt;h2&gt;</span><span class="text-xl">- <span class="text-purple-200">[Kotlin]</span> (intermediate)</span><span class="text-blue-400 text-xl">&lt;/h2&gt;</span>
+            <span class="text-blue-400 text-xl">&lt;h2&gt;</span><span class="text-xl">- <span class="text-yellow-200">[Python]</span> (intermediate)</span><span class="text-blue-400 text-xl">&lt;/h2&gt;</span>
+            <span class="text-blue-400 text-xl">&lt;h2&gt;</span><span class="text-xl">- <span class="text-purple-200">[Lua]</span> (intermediate)</span><span class="text-blue-400 text-xl">&lt;/h2&gt;</span>
+            <span class="text-blue-400 text-xl">&lt;h2&gt;</span><span class="text-xl">- <span class="text-green-200">[ASM]</span> (intermediate)</span><span class="text-blue-400 text-xl">&lt;/h2&gt;</span>
+            <span class="text-blue-400 text-xl">&lt;h2&gt;</span><span class="text-xl">- <span class="text-cyan-200">[Golang]</span> (intermediate)</span><span class="text-blue-400 text-xl">&lt;/h2&gt;</span>
+            <span class="text-blue-400 text-xl">&lt;h2&gt;</span><span class="text-xl">- <span class="text-orange-200">[Rust]</span> (beginner)</span><span class="text-blue-400 text-xl">&lt;/h2&gt;</span>
+            <span class="text-blue-400 text-xl">&lt;h2&gt;</span><span class="text-xl">- <span class="text-yellow-200">[Fortran]</span> (beginner)</span><span class="text-blue-400 text-xl">&lt;/h2&gt;</span></div>
+        <span class="text-blue-400">&lt;/section&gt;</span>
+    <span class="text-blue-400">&lt;/main&gt;</span>
+<span class="text-blue-400">&lt;/body&gt;</span>
+<span class="text-blue-400">&lt;/html&gt;</span>
+                        </pre>
+                        </div>
+                    </section>
+                    <section id="projects" class="mb-8 hidden">
+                        <h2 class="text-3xl font-bold mb-4">My Projects</h2>
+                        <div id="projects-list" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        </div>
+                    </section>
+
+                    <section id="copyright" class="mb-8 hidden">
+                        © 2024 unium. All rights reserved.
+                    </section>
+
+                    <section id="about" class="mb-8 hidden">
+                        <h1 class="text-3xl font-bold mb-4">About Me</h1>
+                        <img src="https://raw.githubusercontent.com/TheUnium/theunium/main/banner_thin.png" alt="unium banner!!" class="mb-4">
+                        <h2 class="text-2xl font-bold mb-2">Who am I?</h2>
+                        <p class="mb-4">
+                            I am <strong>unium</strong> (shocking, I know), an Indian developer and designer. <strong>I mainly specialize in C, C++ and Java</strong>, however I can also do web development 
+                            <span class="text-blue-200">(this site!)</span>.
+                            My hobbies apart from programming include painting, mathematics, physics, biology, boxing, wrestling, football, and more. I also play Minecraft and Geometry Dash!
+                        </p>
+                        <h2 class="text-2xl font-bold mb-2">My background</h2>
+                        <p class="mb-4">
+                            I am a high school student from India, and was born in Bihar. I started learning how to program pretty early on in around late 2016 to early 2017. I started my journey by learning Java,
+                            which is a move I still regret to this day, along with C. I primarily learnt programming through books that my mother/elder cousin(s) had let me borrow, later using online resources to learn Kotlin,
+                            Lua, etc.
+                        </p>
+                        <h2 class="text-2xl font-bold mb-2">Stuff I know/use</h2>
+                        <p class="mb-4">
+                            <a href="https://skillicons.dev">
+                                <img src="https://skillicons.dev/icons?i=c,cpp,cs,php,java,kotlin,html,css,js,nodejs,go&theme=dark" alt="langs I know">
+                            </a><br>
+                            Displayed above are the languages I know, <strong>and</strong> use regularly. I know a few more languages, however I don't use them that often, such as Rust.
+                            Other than that, I daily drive <a href="https://www.debian.org/" class="text-blue-200"><strong>Debian</strong></a> with <a href="https://kde.org/plasma-desktop/" class="text-blue-200"><strong>KDE Plasma</strong></a>.
+                        </p>
+                        <h3 class="text-xs font-bold mb-2">oh yeah also i have a cat :)</h3>
+                    </section>
+                    
+
+                    <section id="contact" class="mb-8 hidden">
+                        <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+                        You can contact me over at my discord account : 
+                        <button class="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-600 transition-colors duration-200 hover-glitch" onclick="copyToClipboard('leunium')">
+                            leunium
+                        </button>
+                        <span id="copy-message" class="text-green-400 ml-2 hidden">Copied!</span>
+                    </section>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="window chrome" style="width: 800px; height:800px; display:none;" id="window_chrome">
-        <div class="title-bar">
-            <img
-                    src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Flofrev.net%2Fwp-content%2Fphotos%2F2016%2F06%2Fgoogle-chrome-logo.png&f=1&nofb=1&ipt=8127467667284abf78f2d9520bbc5c0252e41bc860f4ebc54f19cbc3f6745ad9&ipo=images"
-                    width="16"
-                    height="16"
-                    alt="task icon"
-            >
-            <div class="title-bar-text">Google Chrome</div>
-            <div class="title-bar-controls">
-                <button aria-label="Close" onclick="closeWindow('window_chrome')"></button>
+        <div class="bg-gray-800 border-t border-gray-700">
+            <div class="flex">
+                <div class="px-4 py-2 bg-gray-900 text-sm">PROBLEMS</div>
+                <div class="px-4 py-2 text-sm">OUTPUT</div>
+                <div class="px-4 py-2 text-sm">DEBUG CONSOLE</div>
+                <div class="px-4 py-2 text-sm bg-gray-700">TERMINAL</div>
+                <div class="px-4 py-2 text-sm">PORTS</div>
+                <div class="px-4 py-2 text-sm">COMMENTS</div>
+            </div>
+            <div class="p-2 bg-gray-900 text-sm">
+                <span class="text-green-400">➜</span> <span class="text-blue-400">~/Projects/personal/portfolio</span> ✗ cat copyright.txt
+                <span class="block">© 2024 unium. All rights reserved.</span>
             </div>
         </div>
-        <div class="window-body">
-            <div class="url-bar">
-                <input type="text" id="chrome-url-bar" placeholder="Enter URL" onkeydown="checkKey(event)" spellcheck="false">
-                <button onclick="refreshChrome()" title="Refresh">&#x21bb;</button>
-                <button onclick="goToHome()" title="Go to Home">&#8962;</button>
-            </div>
-            <iframe src="https://www.google.com/webhp?igu=1" id="chrome-screen" frameborder="0" style="width: 100%; height: 725px;"></iframe>
-        </div>
     </div>
 
-    <div class="taskbar">
-        <div class="start-button">
-            <button>
-                <img
-                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.retroarch.com%2Fimages%2FWin_logo_1992.png&f=1&nofb=1&ipt=ac782d64dbb9fda6ff7eb1ab805ea96785eb01e9a3f32926e5bd9a8aafc33db7&ipo=images"
-                        width="16"
-                        height="16"
-                        alt="start icon"
-                >
-                <b>Start</b>
-            </button>
-        </div>
+    <script>
+        const projects = [
+            {
+                name: "celenium",
+                description: "2D game 'engine' made in C++",
+                link: "https://theunium.github.io/celenium",
+                color: "text-green-200"
+            },
+            {
+                name: "htxp",
+                description: "Simple multi-threaded web server made in C++",
+                link: "#",
+                color: "text-blue-200"
+            },
+            {
+                name: "glyphin",
+                description: "Advanced multipurpose Discord bot made with discord.js",
+                link: "https://glyphin.hamium.xyz/",
+                color: "text-yellow-200"
+            },
+            {
+                name: "hammerMC",
+                description: "Ultra-customizable simple multipurpose Minecraft server plugin made in Java",
+                link: "https://modrinth.com/plugin/hammermc",
+                color: "text-blue-200"
+            },
+            {
+                name: "ls2",
+                description: "ls but colorful",
+                link: "https://github.com/TheUnium/ls2",
+                color: "text-red-200"
+            },
+            {
+                name: "tenacity-cpp",
+                description: "Personal project management thing(?) made in C++",
+                link: "#",
+                color: "text-purple-200"
+            },
+            {
+                name: "bee (soon)",
+                description: "The worst of \"X\" and reddit merged into one horrible forum, made in JS",
+                link: "#",
+                color: "text-gray-400"
+            },
+            {
+                name: "tenacity-app (soon)",
+                description: "GUI application for project management, made in Rust with Tauri",
+                link: "#",
+                color: "text-gray-400"
+            }
+        ];
 
-        <div class="unium-task-button">
-            <button onclick="showAboutMeWindows()">
-                <img
-                        src="https://yt3.googleusercontent.com/DoZc6w3G4obmv32bQsRk3p74MnbLXgTRl4MNav_6jy-PVxJwGox-ys7ju8XtQqFHCymiOOhyaA=s176-c-k-c0x00ffffff-no-rj"
-                        width="16"
-                        height="16"
-                        alt="task icon"
-                >
-                <b>Portfolio</b>
-            </button>
-        </div>
+        projects.forEach(project => {
+            document.getElementById("home-projects").insertAdjacentHTML('beforeend', `
+            <span class="text-blue-400 text-xl">&lt;h2&gt;</span><span class="text-xl">- <a href="${project.link}" class="${project.color}">[${project.name}]</a> : ${project.description}</span><span class="text-blue-400 text-xl">&lt;/h2&gt;</span>`);
+        });
 
-        <div class="email-button">
-            <button onclick="showWindow('window_terminal')">
-                <img
-                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn0.iconfinder.com%2Fdata%2Ficons%2Fsoftware-4%2F24%2Fconsole_command_prompt_shell_program-1024.png&f=1&nofb=1&ipt=997024a51ba6e575b8d0bbeaf18ea9b9d87f2d8654e725f5d3f7902935def24c&ipo=images"
-                        width="16"
-                        height="16"
-                        alt="task icon"
-                >
-                <b>Terminal</b>
-            </button>
-        </div>
+        projects.forEach(project => {
+            document.getElementById("home-projects-mobile").insertAdjacentHTML('beforeend', `
+            <li class="pb-2"><a href="${project.link}" class="${project.color}">[${project.name}]</a> : ${project.description}</li>`);
+        });
 
-        <div class="email-button">
-            <button onclick="showWindow('window_chrome')">
-                <img
-                        src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Flofrev.net%2Fwp-content%2Fphotos%2F2016%2F06%2Fgoogle-chrome-logo.png&f=1&nofb=1&ipt=8127467667284abf78f2d9520bbc5c0252e41bc860f4ebc54f19cbc3f6745ad9&ipo=images"
-                        width="16"
-                        height="16"
-                        alt="task icon"
-                >
-                <b>Google Chrome</b>
-            </button>
-        </div>
+        projects.forEach(project => {
+            document.getElementById("projects-list").insertAdjacentHTML('beforeend', `
+                <div class="bg-gray-800 p-4 rounded-lg hover:bg-gray-700 transition-colors duration-200">
+                    <h3 class="text-xl font-bold mb-2">${project.name}</h3>
+                    <p>${project.description}</p>
+                    <a href="${project.link}" class="${project.color}">Visit Project</a>
+                </div>
+            `);
+        });
 
-        <div class="email-button">
-            <button onclick="email()">
-                <img
-                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F020%2F009%2F614%2Foriginal%2Femail-and-mail-icon-black-free-png.png&f=1&nofb=1&ipt=2ca52c878343e55eaeefa57b44c5a9971acdb6aac353b93263ece1107cfe960d&ipo=images"
-                        width="16"
-                        height="16"
-                        alt="task icon"
-                >
-                <b>Email me</b>
-            </button>
-        </div>
+        function showSection(sectionId) {
+            document.querySelectorAll('section').forEach(section => section.classList.add('hidden'));
+            document.getElementById(sectionId).classList.remove('hidden');
+            document.getElementById('current-file').textContent = sectionId + '.html';
+            if (sectionId === 'copyright') {
+                document.getElementById('current-file').textContent = sectionId + '.txt';
+            }
+        }
 
-        <div class="email-button">
-            <button>
-                <img
-                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.seekpng.com%2Fpng%2Ffull%2F15-156359_copyright-symbol-png.png&f=1&nofb=1&ipt=a905183b09a8f7a46ad280cf731d17722c015c3f335b42648e2ed72280a63d1a&ipo=images"
-                        width="16"
-                        height="16"
-                        alt="task icon"
-                >
-                <b><span id="current_year"></span> unium</b>
-            </button>
-        </div>
-
-        <div class="time">
-            <button id="time-button" disabled></button>
-        </div>
-    </div>
-</div>
-
-<script src="js/script.js"></script>
-<script src="js/console.js"></script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                const message = document.getElementById('copy-message');
+                message.classList.remove('hidden');
+                setTimeout(() => message.classList.add('hidden'), 2000);
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+            });
+        }
+    </script>
 </body>
 </html>
