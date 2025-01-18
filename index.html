@@ -186,68 +186,80 @@
     </div>
 
     <script>
-        const projects = [
-            {
-                name: "celenium",
-                description: "2D game 'engine' made in C++",
-                link: "https://theunium.github.io/celenium",
-                color: "text-green-200"
-            },
-            {
-                name: "htxp",
-                description: "Simple multi-threaded web server made in C++",
-                link: "#",
-                color: "text-blue-200"
-            },
-            {
-                name: "glyphin",
-                description: "Advanced multipurpose Discord bot made with discord.js",
-                link: "https://glyphin.hamium.xyz/",
-                color: "text-yellow-200"
-            },
-            {
-                name: "hammerMC",
-                description: "Ultra-customizable simple multipurpose Minecraft server plugin made in Java",
-                link: "https://modrinth.com/plugin/hammermc",
-                color: "text-blue-200"
-            },
-            {
-                name: "ls2",
-                description: "ls but colorful",
-                link: "https://github.com/TheUnium/ls2",
-                color: "text-red-200"
-            },
-            {
-                name: "tenacity-cpp",
-                description: "Personal project management thing(?) made in C++",
-                link: "https://github.com/TheUnium/tenacity-cpp",
-                color: "text-purple-200"
-            },
-            {
-                name: "the stalker",
-                description: "\"\"\"horror\"\"\" mod for fabric mc 1.20.1",
-                link: "https://github.com/TheUnium/the-stalker",
-                color: "text-red-400"
-            },
-            {
-                name: "ImDir",
-                description: "file manager written in cpp using imgui",
-                link: "https://github.com/TheUnium/ImDir",
-                color: "text-blue-300"
-            },
-            {
-                name: "bee (soon)",
-                description: "The worst of \"X\" and reddit merged into one horrible forum, made in JS",
-                link: "#",
-                color: "text-gray-400"
-            },
-            {
-                name: "tenacity-app (soon)",
-                description: "GUI application for project management, made in Rust with Tauri",
-                link: "#",
-                color: "text-gray-400"
-            }
-        ];
+const projects = [
+    {
+        name: "celenium",
+        description: "2D game 'engine' made in C++",
+        link: "https://theunium.github.io/celenium",
+        color: "text-green-200"
+    },
+    {
+        name: "htxp",
+        description: "Simple multi-threaded web server made in C++",
+        link: "#",
+        color: "text-blue-200"
+    },
+    {
+        name: "glyphin",
+        description: "Advanced multipurpose Discord bot made with discord.js",
+        link: "https://glyphin.hamium.xyz/",
+        color: "text-yellow-200"
+    },
+    {
+        name: "hammerMC",
+        description: "Ultra-customizable simple multipurpose Minecraft server plugin made in Java",
+        link: "https://modrinth.com/plugin/hammermc",
+        color: "text-blue-200"
+    },
+    {
+        name: "ls2",
+        description: "ls but colorful",
+        link: "https://github.com/TheUnium/ls2",
+        color: "text-red-200"
+    },
+    {
+        name: "tenacity-cpp",
+        description: "Personal project management thing(?) made in C++",
+        link: "https://github.com/TheUnium/tenacity-cpp",
+        color: "text-purple-200"
+    },
+    {
+        name: "the stalker",
+        description: "\"\"\"horror\"\"\" mod for fabric mc 1.20.1",
+        link: "https://github.com/TheUnium/the-stalker",
+        color: "text-red-400"
+    },
+    {
+        name: "ImDir",
+        description: "file manager written in cpp using imgui",
+        link: "https://github.com/TheUnium/ImDir",
+        color: "text-blue-300"
+    },
+    {
+        name: "NuLog",
+        description: " single header logging lib ",
+        link: "https://github.com/TheUnium/nulog",
+        color: "text-green-300"
+    },
+    {
+        name: "snake",
+        description: "erm its snake",
+        link: "https://github.com/TheUnium/snakex",
+        color: "text-red-300"
+    },
+    {
+        name: "bee (soon)",
+        description: "The worst of \"X\" and reddit merged into one horrible forum, made in JS",
+        link: "#",
+        color: "text-gray-400"
+    },
+    {
+        name: "tenacity-app (soon)",
+        description: "GUI application for project management, made in Rust with Tauri",
+        link: "#",
+        color: "text-gray-400"
+    }
+];
 
         projects.forEach(project => {
             document.getElementById("home-projects").insertAdjacentHTML('beforeend', `
