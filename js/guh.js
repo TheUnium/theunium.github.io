@@ -120,6 +120,12 @@
             color: "text-green-300",
             tags: ["JavaScript", "Web"]
         }, {
+            name: "the seafarer",
+            description: "news website for stoneworks mc server",
+            link: "https://seafarer.unium.in/",
+            color: "text-sky-300",
+            tags: ["JavaScript", "Web"]
+        }, {
             name: "bee (soon)",
             description: "The worst of \"X\" and reddit merged into one horrible forum, made in JS",
             link: "#",
