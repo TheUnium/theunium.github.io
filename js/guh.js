@@ -125,18 +125,6 @@
             link: "https://seafarer.unium.in/",
             color: "text-sky-300",
             tags: ["JavaScript", "Web"]
-        }, {
-            name: "bee (soon)",
-            description: "The worst of \"X\" and reddit merged into one horrible forum, made in JS",
-            link: "#",
-            color: "text-neutral-400",
-            tags: ["JavaScript", "Web", "WIP"]
-        }, {
-            name: "tenacity-app (soon)",
-            description: "GUI application for project management, made in Rust with Tauri",
-            link: "#",
-            color: "text-neutral-400",
-            tags: ["Rust", "GUI", "WIP"]
         }];
 
         const blogPosts = [{
