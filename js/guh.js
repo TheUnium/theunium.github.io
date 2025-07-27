@@ -128,6 +128,14 @@
         }];
 
         const blogPosts = [{
+            id: "07-27-2025",
+            color: "#36e034",
+            title: "You won't find a fifth glyph in this post.",
+            date: "July 5, 2025",
+            excerpt: "a lipogram chall*ng* 😔",
+            tags: ["English", "Writing"],
+            link: "https://unium.in/blog/07-27-2025.html"
+        },{
             id: "05-7-2025",
             color: "#FB2C36",
             title: "i made an app launcher in <6 hours",
