@@ -68,7 +68,7 @@
         const projects = [{
             name: "celenium",
             description: "2D game 'engine' made in C++",
-            link: "https://theunium.github.io/celenium",
+            link: "https://unium.in/celenium",
             color: "text-green-200",
             tags: ["C++", "Game Development"]
         }, {
