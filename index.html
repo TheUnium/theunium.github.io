@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>unium</title>
+		<link rel="stylesheet" href="./assets/css/style.css">
+		</link>
+	</head>
+	<body>
+		<div class="flash-overlay" id="flash-overlay"></div>
+		<div id="app">
+			<section id="view-home" class="view-section active">
+				<div class="home-content">
+					<h1>unium</h1>
+					<nav>
+						<a href="#" class="nav-link" id="nav-projects">projects</a>
+						<a href="#" class="nav-link" id="nav-blog">blog</a>
+						<a href="#" class="nav-link large" id="nav-about">about me</a>
+						<a href="#" class="nav-link" id="nav-gallery">gallery</a>
+						<a href="#" class="nav-link" id="nav-contact">contact</a>
+					</nav>
+				</div>
+			</section>
+			<section id="view-blog" class="view-section">
+				<div class="content-wrapper">
+					<div class="section-header">
+						<h2 class="section-title">blog</h2>
+						<button class="btn-back" id="btn-back-blog">← back</button>
+					</div>
+					<div id="blog-list"></div>
+				</div>
+			</section>
+			<section id="view-projects" class="view-section">
+				<div class="content-wrapper">
+					<div class="section-header">
+						<h2 class="section-title">projects</h2>
+						<button class="btn-back" id="btn-back-projects">← back</button>
+					</div>
+					<div id="project-grid"></div>
+				</div>
+			</section>
+			<section id="view-about" class="view-section">
+				<div class="content-wrapper">
+					<div class="section-header">
+						<h2 class="section-title">about me</h2>
+						<button class="btn-back" id="btn-back-about">← back</button>
+					</div>
+					<div class="bento-grid">
+						<div class="bento-item">
+							<h2 class="about-h2">Who am I?</h2>
+							<p class="about-text">
+								I am <strong>unium</strong> (shocking, I know), an Indian developer and designer.
+								<strong>I mainly specialize in C, C++ and Java</strong>, however I can also do web development
+								<span class="highlight">(this site!)</span>.
+								<br><br>
+								My hobbies apart from programming include painting, mathematics, physics, biology, boxing, wrestling, and football.
+								I also play Minecraft and Geometry Dash!
+							</p>
+						</div>
+						<div class="bento-item">
+							<h2 class="about-h2">History</h2>
+							<p class="about-text" style="font-size: 16px;">
+								I'm a high school student from Bihar, India. I started programming late 2016/early 2017.
+								<br><br>
+								I started with Java (a move I still regret) and C. I learned primarily through books borrowed from family, later using online resources for Kotlin, Lua, etc.
+							</p>
+						</div>
+						<div class="bento-item">
+							<h2 class="about-h2">Stack</h2>
+							<div>
+								<a href="https://skillicons.dev" target="_blank" class="skill-container">
+								<img src="https://skillicons.dev/icons?i=c,cpp,cs,php,java,kotlin,html,css,js,nodejs,go&theme=light" alt="langs" style="display: block; width: 100%;">
+								</a>
+							</div>
+							<p class="about-text" style="font-size: 14px;">
+								Displayed above are languages I know <strong>and</strong> use regularly. I also daily drive <a href="https://www.debian.org/" class="highlight">Debian</a> with <a href="https://kde.org/plasma-desktop/" class="highlight">KDE Plasma</a>.
+							</p>
+						</div>
+						<div class="bento-item cat-box">
+							<img src="./assets/img/loaf/1.png" alt="cat1" class="cat-img img-1">
+							<img src="./assets/img/loaf/2.png" alt="cat2" class="cat-img img-2">
+							<h3>oh yeah also i have a cat :)</h3>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="view-gallery" class="view-section">
+				<div class="content-wrapper">
+					<div class="section-header">
+						<h2 class="section-title">gallery</h2>
+						<button class="btn-back" id="btn-back-gallery">← back</button>
+					</div>
+					<div id="gallery-grid"></div>
+				</div>
+			</section>
+		</div>
+		<div id="lightbox" class="lightbox">
+			<div class="lightbox-overlay"></div>
+			<div class="lightbox-content">
+				<button class="lightbox-close">×</button>
+				<div class="lightbox-inner">
+					<img src="" alt="" id="lightbox-img" class="lightbox-img">
+					<div class="lightbox-info">
+						<h3 id="lightbox-title" class="lightbox-title"></h3>
+						<p id="lightbox-desc" class="lightbox-desc"></p>
+						<div id="lightbox-tags" class="lightbox-tags"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer" id="main-footer">
+			<div class="social-box">
+				<a href="https://github.com/TheUnium" target="_blank" class="social-link gh">
+					<div class="icon icon-gh"></div>
+					<span class="tooltip">@theunium</span>
+				</a>
+				<button class="social-link ds" id="discord-btn">
+					<div class="icon icon-discord"></div>
+					<span class="tooltip" id="ds-tooltip">@leunium</span>
+				</button>
+			</div>
+			<div class="copyright">
+				<span class="copyright-text">&copy; <script>document.write(/\d{4}/.exec(Date())[0])</script> unium. All rights reserved.</span>
+			</div>
+		</footer>
+		<script src="./assets/js/art.js"></script>
+		<script src="./assets/js/script.js"></script>
+	</body>
+</html>

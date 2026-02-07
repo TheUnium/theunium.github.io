@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bloggy is out fr (also now yells at your bad markdown) | unium.in</title>
+  <meta name="theme-color" content="#f25f4c"/>
+  <meta name="description" content="this is the update post for bloggy because omg it’s out now"/>
+  <meta property="twitter:description" content="this is the update post for bloggy because omg it’s out now"/>
+  <meta property="og:description" content="this is the update post for bloggy because omg it’s out now"/>
+  <meta property="og:url" content="https://unium.in/"/>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://unium.in/css/hljs.min.css">
+  <script src="https://unium.in/js/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <style>
+    @keyframes glitch{0%{transform:translate(0)}40%{transform:translate(-1px,-1px)}60%{transform:translate(1px,1px)}80%{transform:translate(2px,-1px)}100%{transform:translate(0)}}.hover-glitch:hover{animation:glitch 0.4s ease infinite}.section-content{animation:fadeIn 0.6s ease forwards}.terminal-text{overflow:hidden;border-right:.15em solid #a6adc8;white-space:nowrap;margin:0;display:inline-block;animation:typing 3.5s steps(40,end),blink-caret 0.75s step-end infinite}#bloggy h1,#bloggy h2,#bloggy h3,#bloggy h4{color:#fff;margin-top:2rem;margin-bottom:1rem;font-weight:700;line-height:1.25;font-size:inherit}#bloggy h1{font-size:2.25rem}#bloggy h2{font-size:1.875rem}#bloggy h3{font-size:1.5rem}#bloggy h4{font-size:1.25rem}#bloggy p{margin-top:1em;margin-bottom:1em}#bloggy a{color:#7dd3fc;text-decoration:none}#bloggy a:hover{text-decoration:underline}#bloggy pre{background:#1a1a1a;padding:1em;border-radius:6px;overflow-x:auto;font-size:.95em;line-height:1.5;color:#d1d5db;word-wrap:normal}#bloggy pre code{background:#fff0;color:inherit;font-size:inherit;font-family:inherit;padding:0}#bloggy code{background:#262626;color:#d1d5db;padding:.2em .4em;border-radius:4px;font-family:monospace;font-size:.95em}#bloggy blockquote{border-left:4px solid #555;padding-left:1em;color:#999;margin:1.5em 0;font-style:italic}#bloggy img{max-width:100%;height:auto;border-radius:8px;margin:1.5rem 0}#bloggy hr{border:0;border-top:1px solid #333;margin:2rem 0}#bloggy ul,#bloggy ol{margin-top:1em;margin-bottom:1em;padding-left:1.25rem;list-style-position:inside}#bloggy ul{list-style-type:disc}#bloggy ol{list-style-type:decimal}#bloggy li{margin-top:.25em;margin-bottom:.25em}pre{padding:1rem;border-radius:.5rem;overflow-x:auto;margin:1rem 0}
+  </style>
+</head>
+<body class="bg-neutral-950 text-neutral-300 font-mono">
+    <div class="flex flex-col h-screen">
+        <div class="bg-neutral-900 p-2 flex items-center shadow-md">
+            <div class="flex space-x-2 mr-4">
+                <div class="w-3 h-3 rounded-full bg-red-500 hover:animate-pulse"></div>
+                <div class="w-3 h-3 rounded-full bg-yellow-500 hover:animate-pulse"></div>
+                <div class="w-3 h-3 rounded-full bg-green-500 hover:animate-pulse"></div>
+            </div>
+            <span class="text-sm">Command Indie Not-Code (totally not Visual Studio Code!)</span>
+        </div>
+
+        <div class="flex flex-1 overflow-hidden">
+            <div class="flex-1 flex flex-col">
+                <div class="flex items-center px-2 py-1 bg-neutral-900">
+                    <span class="mr-2 text-neutral-500" onclick="window.history.back()" style="cursor: pointer;">← BACK</span>
+                    <span class="text-sm" id="current-file">2025-04-14.html</span>
+                </div>
+                <div class="flex-1 bg-neutral-900/50 p-4 overflow-auto">
+                    <section id="bloggy" class="mb-8 section-content">
+                        <div class="bg-neutral-900 p-6 rounded-lg shadow-lg">
+                            <p class="text-3xl text-white font-bold hover-glitch">bloggy is out fr (also now yells at your bad markdown)<span class="block text-sm text-gray-200/50 font-thin">Published at 2025-04-14 (18:38:40)</span></p>
+                            <p><strong>bloggy is out.</strong> frfr. it&#39;s on npm. like you can actually <code>npm install -g bloggy-md</code> now.
+and then run <code>bloggy</code> and it does the thing. the markdown thing. into HTML. you get it.</p>
+<p><a href="https://github.com/TheUnium/bloggy">👉 check it on guthib</a><br><a href="https://www.npmjs.com/package/bloggy-md">📦 and heres the npm page</a></p>
+<hr>
+<h2>what even is bloggy?</h2>
+<p>if you forgot (or this is your first time here), bloggy is my little cli tool that turns markdown files into html pages using a template file and some magic comments like:</p>
+<pre><code class="language-html">&lt;!-- [BLOGGY::TITLE] --&gt;
+&lt;!-- [BLOGGY::DESCRIPTION] --&gt;
+&lt;!-- [BLOGGY::CONTENT] --&gt;
+&lt;!-- [BLOGGY::COLOR] --&gt;
+&lt;!-- [BLOGGY::DATE] --&gt;
+&lt;!-- [BLOGGY::TIME] --&gt;
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>tag</th>
+<th>what it does</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>&lt;!-- [BLOGGY::TITLE] --&gt;</code></td>
+<td>gets replaced with the post&#39;s title</td>
+</tr>
+<tr>
+<td><code>&lt;!-- [BLOGGY::DESCRIPTION] --&gt;</code></td>
+<td>the posts description, most useful for seo tags</td>
+</tr>
+<tr>
+<td><code>&lt;!-- [BLOGGY::COLOR] --&gt;</code></td>
+<td>the post&#39;s accent color (you can use it as the page&#39;s theme-color for seo as well)</td>
+</tr>
+<tr>
+<td><code>&lt;!-- [BLOGGY::CONTENT] --&gt;</code></td>
+<td>this is where the html-ified markdown goes</td>
+</tr>
+<tr>
+<td><code>&lt;!-- [BLOGGY::DATE] --&gt;</code></td>
+<td>gets replaced by the current date</td>
+</tr>
+<tr>
+<td><code>&lt;!-- [BLOGGY::TIME] --&gt;</code></td>
+<td>gets replaced by the current time</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>what&#39;s new?</h2>
+<p>since the last post, ive added a bunch of cool stuff to make bloggy slightly less jank and more usable, like:</p>
+<h3>markdown validation</h3>
+<p>yes. it yells at you now. but like, helpfully. here’s an example of what it catches:</p>
+<pre><code class="language-text">⛔ stuff wrong:
+  • empty link target for &quot;[This link is broken]()&quot;. this is missing a url!
+⚠ bad practice:
+  • found raw html tags in markdown: &lt;div&gt;
+</code></pre>
+<p>you can turn this off with <code>--no-validate</code>, or just <code>--no-warns</code> / <code>--no-errors</code>. or do it permanently in config.yaml.</p>
+<h3>watch mode (<code>--watch</code> / <code>-w</code>)</h3>
+<p>bloggy now watches your markdown file for changes and regenerates the html insantly.</p>
+<pre><code class="language-shell">bloggy markdown/post.md -w
+</code></pre>
+<p>you’ll see output like:</p>
+<pre><code class="language-shell">👀 watching for changes to markdown/04-13-2025.md...
+✓ /home/unium/Projects/personal/portfolio-site/gh/blog/04-13-2025.html
+✓ /home/unium/Projects/personal/portfolio-site/gh/blog/04-13-2025.html
+✓ /home/unium/Projects/personal/portfolio-site/gh/blog/04-13-2025.html
+✓ /home/unium/Projects/personal/portfolio-site/gh/blog/04-13-2025.html
+✓ /home/unium/Projects/personal/portfolio-site/gh/blog/04-13-2025.html
+</code></pre>
+<h3>fancy-er cli</h3>
+<p>its so much cooler now fr, and it even has colors now, thanks to <a href="https://npmjs.com/package/colorette">colorette</a>! for example using it on the markdown file for this page outputs:</p>
+<pre><code class="language-shell">$ bloggy markdown/04-13-2025.md
+⛔ stuff wrong:
+  • empty link target for &quot;[This link is broken]()&quot;. this is missing a url!
+⚠ bad practice:
+  • found raw html tags in markdown: &lt;div&gt;
+
+Notes:
+  📝 bloggy will still convert this to html, just some things will likely be broken.
+  you can disable this with --no-warns and --no-errors, or just --no-validate to disable both.
+  you can also do this same thing in the config.yaml file if you want, itll do the same thing
+
+---------------------
+📝 maked: 04-13-2025.html (⛔ 1 | ⚠1)
+---------------------
+📝 title: bloggy is out fr (also now yells at your bad markdown)
+📎 desc: this is the update post for bloggy because omg it’s out now
+📂 saved to: /home/unium/Projects/personal/portfolio-site/gh/blog/04-13-2025.html
+
+$ # so cool, right?
+</code></pre>
+<p>now, this is obviously missing colours but come on :(</p>
+<h1>final thoughts!</h1>
+<p>even though, yeah, this is kinda of jank, and i wouldn&#39;t recommend using this over proper static site generators like <a href="https://gohugo.io/">hugo</a>, <a href="https://astro.build/">astro</a> or <a href="https://jekyllrb.com/">jekyll</a>, i still like it, its nice, its simple, and it just works (for me at least!) :)</p>
+<p>so, if you want to tinker around with this, go download it with <code>npm install -g bloggy-md</code>!</p>
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-neutral-900 border-t border-neutral-700">
+            <div class="flex overflow-x-auto">
+                <div class="px-4 py-2 text-sm whitespace-nowrap">PROBLEMS</div>
+                <div class="px-4 py-2 text-sm whitespace-nowrap">OUTPUT</div>
+                <div class="px-4 py-2 text-sm whitespace-nowrap">DEBUG CONSOLE</div>
+                <div class="px-4 py-2 text-sm bg-neutral-800 whitespace-nowrap">TERMINAL</div>
+                <div class="px-4 py-2 text-sm whitespace-nowrap">PORTS</div>
+                <div class="px-4 py-2 text-sm whitespace-nowrap">COMMENTS</div>
+            </div>
+            <div id="terminal-container" class="p-2 bg-neutral-950 text-sm overflow-x-auto">
+                <div id="terminal-output" class="font-mono"></div>
+                <div class="terminal-line flex">
+                    <span class="text-green-400 mr-2">➜</span>
+                    <span class="text-blue-400 mr-2">~/Projects/personal/portfolio</span>
+                    <span class="mr-2">✗</span>
+                    <span id="terminal-command" class="terminal-text"># Copyright © 2024 unium. All rights reserved.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

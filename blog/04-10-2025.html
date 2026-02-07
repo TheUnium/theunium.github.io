@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello bloggy! | unium.in</title>
+  <meta name="theme-color" content="#7f5af0"/>
+  <meta name="description" content="Omggg Hiiiiiiii"/>
+  <meta property="twitter:description" content="Omggg Hiiiiiiii"/>
+  <meta property="og:description" content="Omggg Hiiiiiiii"/>
+  <meta property="og:url" content="https://unium.in/"/>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://unium.in/css/hljs.min.css">
+  <script src="https://unium.in/js/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <style>
+    @keyframes glitch{0%{transform:translate(0)}40%{transform:translate(-1px,-1px)}60%{transform:translate(1px,1px)}80%{transform:translate(2px,-1px)}100%{transform:translate(0)}}.hover-glitch:hover{animation:glitch 0.4s ease infinite}.section-content{animation:fadeIn 0.6s ease forwards}.terminal-text{overflow:hidden;border-right:.15em solid #a6adc8;white-space:nowrap;margin:0;display:inline-block;animation:typing 3.5s steps(40,end),blink-caret 0.75s step-end infinite}#bloggy h1,#bloggy h2,#bloggy h3,#bloggy h4{color:#fff;margin-top:2rem;margin-bottom:1rem;font-weight:700;line-height:1.25;font-size:inherit}#bloggy h1{font-size:2.25rem}#bloggy h2{font-size:1.875rem}#bloggy h3{font-size:1.5rem}#bloggy h4{font-size:1.25rem}#bloggy p{margin-top:1em;margin-bottom:1em}#bloggy a{color:#7dd3fc;text-decoration:none}#bloggy a:hover{text-decoration:underline}#bloggy pre{background:#1a1a1a;padding:1em;border-radius:6px;overflow-x:auto;font-size:.95em;line-height:1.5;color:#d1d5db;word-wrap:normal}#bloggy pre code{background:#fff0;color:inherit;font-size:inherit;font-family:inherit;padding:0}#bloggy code{background:#262626;color:#d1d5db;padding:.2em .4em;border-radius:4px;font-family:monospace;font-size:.95em}#bloggy blockquote{border-left:4px solid #555;padding-left:1em;color:#999;margin:1.5em 0;font-style:italic}#bloggy img{max-width:100%;height:auto;border-radius:8px;margin:1.5rem 0}#bloggy hr{border:0;border-top:1px solid #333;margin:2rem 0}#bloggy ul,#bloggy ol{margin-top:1em;margin-bottom:1em;padding-left:1.25rem;list-style-position:inside}#bloggy ul{list-style-type:disc}#bloggy ol{list-style-type:decimal}#bloggy li{margin-top:.25em;margin-bottom:.25em}pre{padding:1rem;border-radius:.5rem;overflow-x:auto;margin:1rem 0}
+  </style>
+</head>
+<body class="bg-neutral-950 text-neutral-300 font-mono">
+    <div class="flex flex-col h-screen">
+        <div class="bg-neutral-900 p-2 flex items-center shadow-md">
+            <div class="flex space-x-2 mr-4">
+                <div class="w-3 h-3 rounded-full bg-red-500 hover:animate-pulse"></div>
+                <div class="w-3 h-3 rounded-full bg-yellow-500 hover:animate-pulse"></div>
+                <div class="w-3 h-3 rounded-full bg-green-500 hover:animate-pulse"></div>
+            </div>
+            <span class="text-sm">Command Indie Not-Code (totally not Visual Studio Code!)</span>
+        </div>
+
+        <div class="flex flex-1 overflow-hidden">
+            <div class="flex-1 flex flex-col">
+                <div class="flex items-center px-2 py-1 bg-neutral-900">
+                    <span class="mr-2 text-neutral-500" onclick="window.history.back()" style="cursor: pointer;">← BACK</span>
+                    <span class="text-sm" id="current-file">2025-04-14.html</span>
+                </div>
+                <div class="flex-1 bg-neutral-900/50 p-4 overflow-auto">
+                    <section id="bloggy" class="mb-8 section-content">
+                        <div class="bg-neutral-900 p-6 rounded-lg shadow-lg">
+                            <p class="text-3xl text-white font-bold hover-glitch">Hello bloggy!<span class="block text-sm text-gray-200/50 font-thin">Published at 2025-04-14 (18:39:02)</span></p>
+                            <p>i made a thingy for this called bloggy, it is very cool iirc 🎉🎉🎉</p>
+<hr>
+<h2>How does it work?</h2>
+<p>ok so like, i made it in like 30 minutes, it isnt the best, but, here’s what goes down:</p>
+<ul>
+<li>you pass in a lil md file</li>
+<li>it reads the file and is like, <strong>&quot;hmm... is there some page metadata?&quot;</strong>*</li>
+<li>then it <strong>markdowns</strong> your actual post into HTML because raw markdown is ugly for browsers lmao</li>
+<li>after that, it puts the content into a pre-made HTML template</li>
+<li>it swaps little magic comments like <code>&lt;!-- [BLOGGY::TITLE] --&gt;</code> with your real data</li>
+<li>then it minifies the HTML</li>
+<li>finally, it saves the finished blog post as a html file 🔥</li>
+</ul>
+<p>* page metadata is stored on the top of the markdown file, separated by a &quot;---&quot; at the top and the bottom. it has three values: title, description, and color.</p>
+<hr>
+<h2>Does it have theming?</h2>
+<p>yes, sort of. basically, all you do is create a &quot;template.html&quot; file and pass it into the script. all the html file needs is tags that tell bloggy where to put what.</p>
+<ul>
+<li><code>&lt;!-- [BLOGGY::TITLE] --&gt;</code> : tells bloggy where to put the title (like eg. <code>&lt;title&gt;&lt;!-- [BLOGGY::TITLE] --&gt; | unium.in&lt;/title&gt;</code>)</li>
+<li><code>&lt;!-- [BLOGGY::DESCRIPTION] --&gt;</code> : tells bloggy where to put the description, basically just for seo.</li>
+<li><code>&lt;!-- [BLOGGY::COLOR] --&gt;</code> : tells bloggy where to put the blogs color. i added this for the <code>theme-color</code> meta attribute, but you can probably use this for styling, like each post can have its own accent colors</li>
+<li><code>&lt;!-- [BLOGGY::CONTENT] --&gt;</code> : finally, this is where the actual html-ifyd markdown content is put.</li>
+</ul>
+<hr>
+<h2>RAQ (rarely asked questions)</h2>
+<p><strong>Q: where download :D</strong><br>A: no make ur own lol</p>
+<p><strong>Q: can it make me a sandwich?</strong><br>A: sometimes</p>
+<p><strong>Q: fr though where download 😔</strong><br>A: this is very unpolished right now and im busy with school. once i get time to work on this a bit more, i will make a repo for this, and add a link to download it... somewhere idk</p>
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-neutral-900 border-t border-neutral-700">
+            <div class="flex overflow-x-auto">
+                <div class="px-4 py-2 text-sm whitespace-nowrap">PROBLEMS</div>
+                <div class="px-4 py-2 text-sm whitespace-nowrap">OUTPUT</div>
+                <div class="px-4 py-2 text-sm whitespace-nowrap">DEBUG CONSOLE</div>
+                <div class="px-4 py-2 text-sm bg-neutral-800 whitespace-nowrap">TERMINAL</div>
+                <div class="px-4 py-2 text-sm whitespace-nowrap">PORTS</div>
+                <div class="px-4 py-2 text-sm whitespace-nowrap">COMMENTS</div>
+            </div>
+            <div id="terminal-container" class="p-2 bg-neutral-950 text-sm overflow-x-auto">
+                <div id="terminal-output" class="font-mono"></div>
+                <div class="terminal-line flex">
+                    <span class="text-green-400 mr-2">➜</span>
+                    <span class="text-blue-400 mr-2">~/Projects/personal/portfolio</span>
+                    <span class="mr-2">✗</span>
+                    <span id="terminal-command" class="terminal-text"># Copyright © 2024 unium. All rights reserved.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

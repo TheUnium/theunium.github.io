@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>i made an app launcher in <6 hours | unium.in</title>
+  <meta name="theme-color" content="#A22633"/>
+  <meta name="description" content="saw raycast, got inspired, made thing, abandoned thing 😔"/>
+  <meta property="twitter:description" content="saw raycast, got inspired, made thing, abandoned thing 😔"/>
+  <meta property="og:description" content="saw raycast, got inspired, made thing, abandoned thing 😔"/>
+  <meta property="og:url" content="https://unium.in/"/>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://unium.in/css/hljs.min.css">
+  <script src="https://unium.in/js/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <style>
+    @keyframes glitch{0%{transform:translate(0)}40%{transform:translate(-1px,-1px)}60%{transform:translate(1px,1px)}80%{transform:translate(2px,-1px)}100%{transform:translate(0)}}.hover-glitch:hover{animation:glitch 0.4s ease infinite}.section-content{animation:fadeIn 0.6s ease forwards}.terminal-text{overflow:hidden;border-right:.15em solid #a6adc8;white-space:nowrap;margin:0;display:inline-block;animation:typing 3.5s steps(40,end),blink-caret 0.75s step-end infinite}#bloggy h1,#bloggy h2,#bloggy h3,#bloggy h4{color:#fff;margin-top:2rem;margin-bottom:1rem;font-weight:700;line-height:1.25;font-size:inherit}#bloggy h1{font-size:2.25rem}#bloggy h2{font-size:1.875rem}#bloggy h3{font-size:1.5rem}#bloggy h4{font-size:1.25rem}#bloggy p{margin-top:1em;margin-bottom:1em}#bloggy a{color:#7dd3fc;text-decoration:none}#bloggy a:hover{text-decoration:underline}#bloggy pre{background:#1a1a1a;padding:1em;border-radius:6px;overflow-x:auto;font-size:.95em;line-height:1.5;color:#d1d5db;word-wrap:normal}#bloggy pre code{background:#fff0;color:inherit;font-size:inherit;font-family:inherit;padding:0}#bloggy code{background:#262626;color:#d1d5db;padding:.2em .4em;border-radius:4px;font-family:monospace;font-size:.95em}#bloggy blockquote{border-left:4px solid #555;padding-left:1em;color:#999;margin:1.5em 0;font-style:italic}#bloggy img{max-width:100%;height:auto;border-radius:8px;margin:1.5rem 0}#bloggy hr{border:0;border-top:1px solid #333;margin:2rem 0}#bloggy ul,#bloggy ol{margin-top:1em;margin-bottom:1em;padding-left:1.25rem;list-style-position:inside}#bloggy ul{list-style-type:disc}#bloggy ol{list-style-type:decimal}#bloggy li{margin-top:.25em;margin-bottom:.25em}pre{padding:1rem;border-radius:.5rem;overflow-x:auto;margin:1rem 0}
+  </style>
+</head>
+<body class="bg-neutral-950 text-neutral-300 font-mono">
+    <div class="flex flex-col h-screen">
+        <div class="bg-neutral-900 p-2 flex items-center shadow-md">
+            <div class="flex space-x-2 mr-4">
+                <div class="w-3 h-3 rounded-full bg-red-500 hover:animate-pulse"></div>
+                <div class="w-3 h-3 rounded-full bg-yellow-500 hover:animate-pulse"></div>
+                <div class="w-3 h-3 rounded-full bg-green-500 hover:animate-pulse"></div>
+            </div>
+            <span class="text-sm">Command Indie Not-Code (totally not Visual Studio Code!)</span>
+        </div>
+
+        <div class="flex flex-1 overflow-hidden">
+            <div class="flex-1 flex flex-col">
+                <div class="flex items-center px-2 py-1 bg-neutral-900">
+                    <span class="mr-2 text-neutral-500" onclick="window.history.back()" style="cursor: pointer;">← BACK</span>
+                    <span class="text-sm" id="current-file">05-07-2025.html</span>
+                </div>
+                <div class="flex-1 bg-neutral-900/50 p-4 overflow-auto">
+                    <section id="bloggy" class="mb-8 section-content">
+                        <div class="bg-neutral-900 p-6 rounded-lg shadow-lg">
+                            <p class="text-3xl text-white font-bold hover-glitch">i made an app launcher in <6 hours<span class="block text-sm text-gray-200/50 font-thin">Published at 05-07-2025 (22:20:10)</span></p>
+                            <p><a href="https://github.com/TheUnium/rnux">👉 check rnux out on github : https://github.com/TheUnium/rnux</a></p>
+<p><strong>Hi guys!</strong> I totally forgot I had this blog thing. I&#39;ve been busy because of school for the last month or so, so I haven&#39;t had the time to either update this blog or make anything interesting. However, as my summer holidays were close to ending, I decided to finally make a few projects.</p>
+<h2>Project #1 - 😱 Something something, horror.</h2>
+<p>I was bored and watching Youtube, and I stumbled upon a video reviewing the movie &quot;The Ritual&quot; (you can view it @ Netflix), and I decided to just watch the movie instead of the review a few minutes into the video. I didn&#39;t regret the decision at all. Amazing movie (frfr ong). It wasn&#39;t the best, there were a few parts where the dialogue was meh, but that&#39;s beside the point.</p>
+<p>Anyways, I randomly got inspiration to work on a game because of this movie. I haven&#39;t made much progress on the game yet, but I feel like this was worth mentioning as this game is the first project I&#39;ve worked on since <a href="https://www.npmjs.com/package/bloggy-md">bloggy</a>. So far, I&#39;ve made:</p>
+<ul>
+<li>A <strong>very</strong> simple movement system with stamina and what not</li>
+<li>Audio stuff (footstep, heartbeat, etc.)</li>
+<li>A fear system (basically, <em>higher fear = higher stamina</em>, but <em>lower running/walking speeds</em>. Also makes the <em>heartbeat louder</em>!)</li>
+</ul>
+<p>I won&#39;t say much because well... there isn&#39;t much to say. It&#39;s made with Unity3D, my beloved (not really). As much hate Unity gets, I have to admit that the engine itself is pretty solid. The company is not the greatest to say the least but the product itself is amazing in my opinion.</p>
+<h2>Project #2 - 🚀 rnux</h2>
+<p><strong>This is the cool one :)</strong><br>Once again, I was bored and watching Youtube and I saw a video in my recommended, which was a showcase of <a href="https://www.raycast.com/">Raycasts&#39;</a> windows port. This <em>unfortunately</em> gave me inspiration to make something similar. So, I made <a href="https://github.com/TheUnium/rnux">rnux</a>. It&#39;s an app launcher. It looks good. That&#39;s kind of it. Other than that, it is pretty broken and janky.</p>
+<p>The main reason why it is so broken and janky is mainly because <strong>rnux</strong> was made in <strong>only &lt;6 hours</strong> in a single day. It&#39;s made in <strong>C++</strong> (the 🐐), it uses <strong>Qt6</strong>, and it&#39;s <strong>X11</strong> only. Mainly because I still have PTSD from Wayland from back when it was horrendous to use on plasma.</p>
+<p>Right now, it&#39;s not very mature, because again, <strong>&lt;6 hours of development</strong>, <em>however</em> it does have a few nice features:</p>
+<ul>
+<li>It can... launch apps. Truly revolutionary</li>
+<li>It can calculate basic arithmetic operations</li>
+<li>It can search online</li>
+<li>For a few online services (GitHub (<code>gh</code>), NPM (<code>npm</code>), and Cargo (<code>cargo</code>)), it can even fetch the top 10 results and show it without you having to leave</li>
+<li>It can run a few system commands (like <code>shutdown</code>, <code>lock</code>, etc.)</li>
+<li>Fuzzy searching</li>
+</ul>
+<h2>Anyways...</h2>
+<p>That&#39;s pretty much it. I&#39;ve been busy with studying for the last month, our summer holidays started and I felt like it was a good time to prepare for our board exams, and that&#39;s why I&#39;ve not been able to work on my existing projects or create anything cool recently. I will probably be pretty inactive for most of this year, but I&#39;ll try to work on a project every once in a while.</p>
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-neutral-900 border-t border-neutral-700">
+            <div class="flex overflow-x-auto">
+                <div class="px-4 py-2 text-sm whitespace-nowrap">PROBLEMS</div>
+                <div class="px-4 py-2 text-sm whitespace-nowrap">OUTPUT</div>
+                <div class="px-4 py-2 text-sm whitespace-nowrap">DEBUG CONSOLE</div>
+                <div class="px-4 py-2 text-sm bg-neutral-800 whitespace-nowrap">TERMINAL</div>
+                <div class="px-4 py-2 text-sm whitespace-nowrap">PORTS</div>
+                <div class="px-4 py-2 text-sm whitespace-nowrap">COMMENTS</div>
+            </div>
+            <div id="terminal-container" class="p-2 bg-neutral-950 text-sm overflow-x-auto">
+                <div id="terminal-output" class="font-mono"></div>
+                <div class="terminal-line flex">
+                    <span class="text-green-400 mr-2">➜</span>
+                    <span class="text-blue-400 mr-2">~/Projects/personal/portfolio</span>
+                    <span class="mr-2">✗</span>
+                    <span id="terminal-command" class="terminal-text"># Copyright © 2024 unium. All rights reserved.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
