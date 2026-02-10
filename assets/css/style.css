@@ -201,7 +201,7 @@ nav {
     color: var(--col-bg);
 }
 
-#blog-list {
+.blog-list {
 display: flex;
 flex-direction: column;
 gap: 20px;
@@ -1284,4 +1284,71 @@ width: 100%;
     color: var(--col-accent);
     font-weight: 900;
     text-transform: uppercase;
+}
+
+.unium-container {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    z-index: 50;
+    cursor: pointer;
+    transition: transform 0.3s var(--anim-bounce);
+}
+
+.unium-container:hover {
+    transform: scale(1.05);
+}
+
+.unium-img {
+    width: 250px;
+    height: auto;
+    display: block;
+}
+
+.unium-tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 100%;
+    transform: translate(-20px, -10px) scale(0.9);
+    background-color: #fff;
+    color: var(--col-bg);
+    padding: 12px 18px;
+    border-radius: 12px;
+    border-bottom-left-radius: 0;
+    font-size: 16px;
+    font-weight: 700;
+    white-space: nowrap;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s var(--anim-bounce);
+    transform-origin: bottom left;
+}
+
+.unium-tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 10px solid #fff;
+    border-bottom: 10px solid transparent;
+}
+
+.unium-container:hover .unium-tooltip {
+    opacity: 1;
+    transform: translate(0, -20px) scale(1);
+    pointer-events: auto;
+}
+
+@media (max-width: 768px) {
+    .unium-img {
+        width: 150px;
+    }
+    
+    .unium-tooltip {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
 }
