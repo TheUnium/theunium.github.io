@@ -28,7 +28,9 @@ const projects = [{
   name: "ndatmx",
   description: "daemon based project manager, monitors git repos for changes, pulls commits, and runs projects based on its config file",
   link: "https://github.com/TheUnium/ndatmx",
-  color: "#F34B7D"
+  color: "#F34B7D",
+
+  tags: ["C++"]
 }, {
   name: "mathplot",
   description: "math plotting tui with support for multiple functions, finding derivatives and integral, etc using ncurses",
