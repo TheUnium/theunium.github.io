@@ -1,0 +1,104 @@
+@config {
+    title: "No one writes good code anymore. Why? AI.",
+    author: "johnathon unium",
+    date: \today,
+    bibliography: "02-25-2026.bib"
+}
+
+\toc
+
+# What the hell do you mean?
+
+Good question! My answer will certainly feel... broken compared to the usual "good code is when you follow
+DRY!" or "good code is when you create 50 quintillion classes and make everything OOP!" or even... the
+devil's advice itself: "good code is when EVERYTHING is serverless, and EVERYTHING is Javascript (or at
+least some form of web technology)" *(ahem ahem, [electron](https://www.electronjs.org/))*.
+
+Most people these days learn programming via YouTube, or God forbid, AI, which... just isn't right. Recently,
+programming has essentially become "ship X in Y time, or else you are a bad developer", which just isn't how
+programming should be done. Of course, if you have a job or something similar, then that is how you should
+think about it (unless you really enjoy being homeless). However, if you are just doing it as a hobby then it is
+100% the wrong way to approach it.
+
+## Cool... why is it a problem?
+
+Well... it isn't. How we learn things constantly changes. When the printing press was invented, suddenly people
+started spreading and learning knowledge via written texts instead of "I heard about this from a guy who knew
+a guy who knew a dragon who told this story". Similarly, with the explosion of the internet, books became less
+popular.
+
+**However**, what I'm criticizing isn't the *way* people learn programming but *how* they learn it. Basically,
+it isn't about the medium; it's instead about the *depth* (I swear I'm not ChatGPT).
+
+My personal opinion is that as we go on, we have started to value thinking for ourselves less and less (this
+applies outside of programming but that's for another time...) and this has
+made it so we value abstraction, memorization, and of course, our most loathed and despised: prompting AI.
+
+## Well... AI is the future isn't it?
+
+No. Well, yes, but no. You see, in the end, your brain is a muscle. If you don't train it, it will get weaker.
+The more AI you use, the dumber you get, whether you realize it or not, and more often than not, you will not
+realize it. We have seen this happen to younger generations in more "developed" Western countries, [like the
+U.S.A.](https://apnews.com/article/naep-reading-math-scores-12th-grade-c18d6e3fbc125f12948cc70cb85a520a)
+
+The same happens with "tech literacy" as well. The more you outsource thinking to machines, the more your brain
+thinks, *"hm... I haven't had to think about [x] in a long time... why keep those 'pathways' alive? let's...
+just forget that."*[@Sparrow2011], and *boom*, you grow 0.1% dumber.
+
+Additionally, there is a reason I used '0.1%'. It's because it *sounds* so small and insignificant... because, well,
+it is. But that small insignificant number adds up slowly, till you are too far gone to recover and have no choice
+*but* to outsource to a machine.
+
+Now, trust me, I'm not saying using AI makes you instantly dumber, and I'm not saying you should *NEVER* use AI,
+*EVER*. AI certainly has its uses. For example, even in my project: [llmpp](https://github.com/TheUnium/llmpp) I
+used ChatGPT to generate the Makefile from my custom meta-build engine's syntax. Does that mean I have instantly
+forgotten how to write a `Makefile`? Unfortunately not.
+
+## But... something something printing press???
+
+The printing press is very often used as an example to justify AI... and it's wrong. The difference between the
+printing press and AI is that one of these technologies doesn't think for you. You have the world's knowledge
+either way, whether you go to an AI or a library, but the difference is that AI spoon-feeds you all the knowledge
+you want.
+
+When you read a *book*, you have to somehow synthesize that information into knowledge. You parse the sentences,
+you 'internalize' the logic, you think about the concepts and so on. With AI, on the other hand... there is none of
+that[@NoWayChristopherNolanOppenheimerFilm2014]. It skips the whole "processing" part of learning.
+
+Think of it like a calculator and a GPS. With a calculator it helps you do math, yes, but you *need* to understand the
+logic behind the calculation. With a GPS, on the other hand, it just... tells you where to go. If you use only your
+GPS for a few years (or even a few months) without figuring things out on your own, you lose general spatial
+awareness. If you then suddenly stop using GPS, you will get lost more easily (Read More[@DahmaniBohbot2020]).
+
+Friction creates growth in our brains, and the less friction there is, the slower our brains get[@RiskoGilbert2016]. AI
+completely bypasses this friction. That is the problem. Read books.
+
+## Oh great... old man yells at cloud. How original.
+
+LISTEN HERE YOUNG MAN- I mean, no. Here's the funny thing, I am still in high school. The only reason why I think
+I "deserve" to speak on this (at least a little bit) is because of the *way* I learned programming. Most of what I
+learned comes from books I borrowed from my family... out of which exactly *zero* are *not* older than me.
+
+Hell, I have several books on my shelf about J2SE/Java 2, and the one that helped me learn Java the most is a book
+called [Java 2: The Complete Reference (3^{rd} Edition)](https://books.google.co.in/books/about/Java_2_The_Complete_
+Reference_Third_Edit.html?id=a4UumQEACAAJ&redir_esc=y "Google Books - Java 2: The Complete Reference - 3rd Edition")
+by Patrick Naughton and Herbert Schildt, a book that considers Java Applets to be the greatest human achievement, maybe
+second to fire if you are feeling generous.
+
+## Hey, wasn't this about "good code"?
+
+Shit, I forgot... Basically, what I am trying to say is that because of how AI makes you "dumb", it makes your code
+worse as well. When you use AI to write code, you don't truly know what it is writing. When you use AI to learn how
+to write code, you don't truly learn.
+
+# So... what IS good code?
+
+Good code is code that is transparent. Good code is code that is written with intent, by a human and for humans.
+
+This doesn't mean never using code others wrote. That'd be extremely dumb. Rather, what I mean is that you should
+*understand* what it is that you are using. You should be able to explain the inner workings of the tool you are using.
+If you can't, that is completely fine, but it should signal to you that you need to *learn* more, and *learn* properly.
+
+In the end, good code *is* about having fun if it is for a hobby, but it *should also* be about knowing what you write.
+That little difference takes your code from "good" to "amazing".
+
