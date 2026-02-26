@@ -35,77 +35,77 @@ const projects = [{
     description: "llm inference engine from scratch in c++ with no ai/ml dependencies",
     link: "https://github.com/TheUnium/llmpp",
     color: "#7d81fc",
-
+    image: "assets/img/projects/llmpp.png",
     tags: ["C++"]
 }, {
     name: "ndatmx",
     description: "daemon based project manager, monitors git repos for changes, pulls commits, and runs projects based on its config file",
     link: "https://github.com/TheUnium/ndatmx",
     color: "#F34B7D",
-
+    image: "assets/img/projects/ndatmx.png",
     tags: ["C++"]
 }, {
     name: "mathplot",
     description: "math plotting tui with support for multiple functions, finding derivatives and integral, etc using ncurses",
     link: "https://github.com/TheUnium/mathplot",
     color: "#ef4444",
-
+    image: "assets/img/projects/mathplot.png",
     tags: ["C"]
 }, {
     name: "3d-nolib",
     description: "a simple 3d tech demo with quake like movement without libc or any other libraries (x11 only)",
     link: "https://github.com/TheUnium/3d-nolib",
     color: "#fecaca",
-
+    image: "assets/img/projects/3d-nolib.png",
     tags: ["C"]
 }, {
     name: "hello-world",
     description: "dumb proof of context demonstrating a drm-protected... \"Hello, World!\", and impls several anti-analysis techniques, written without libc",
     link: "https://github.com/TheUnium/hello-world",
     color: "#2dd4bf",
-
+    image: "assets/img/projects/hello-world.png",
     tags: ["C"]
 }, {
     name: "celenium forge",
     description: "3d vulkan engine made in cpp with jolt physics (coming soon-ish)",
     link: "#",
     color: "#bbf7d0",
-
+    image: "assets/img/projects/celenium.png",
     tags: ["C++"]
 }, {
     name: "glyphin",
     description: "advanced multipurpose discord bot made with discord.js",
     link: "https://glyphin.hamium.xyz/",
     color: "#fde047",
-
+    image: "assets/img/projects/glyphin.png",
     tags: ["JS"]
 }, {
     name: "rnux",
     description: "app launcher that actually looks good by default",
     link: "https://github.com/TheUnium/rnux",
     color: "#ef4444",
-
+    image: "assets/img/projects/rnux.png",
     tags: ["C++"]
 }, {
     name: "hammerMC",
     description: "ultra customizable simple multipurpose minecraft server plugin",
     link: "https://modrinth.com/plugin/hammermc",
     color: "#bfdbfe",
-
+    image: "assets/img/projects/hammer.png",
     tags: ["Java"]
 }, {
     name: "bloggy",
     description: "bloggy is a little markdown -> html converter made for blogs",
     link: "https://www.npmjs.com/package/bloggy-md",
     color: "#86efac",
-
+    image: "assets/img/projects/bloggy.png",
     tags: ["JS"]
 }, {
     name: "the seafarer",
     description: "news website for stoneworks mc server (discontinued)",
     link: "#",
     color: "#7dd3fc",
-
+    image: "assets/img/projects/seafarer.png",
     tags: ["JS"]
 }];
 
@@ -240,9 +240,12 @@ function renderProjects() {
         a.style.setProperty('--p-color', color);
         const tagsHtml = proj.tags.map(tag => `<span class="p-tag">${tag}</span>`).join('');
         a.innerHTML = `
+        <div class="p-image-container">
+            <img class="p-img" src="${proj.image}" alt="${proj.name} preview">
+        </div>
         <div class="p-header">
-        <h3 class="p-title">${proj.name}</h3>
-        <div class="p-arrow">➜</div>
+            <h3 class="p-title">${proj.name}</h3>
+            <div class="p-arrow">➜</div>
         </div>
         <p class="p-desc">${proj.description}</p>
         <div class="p-tags">${tagsHtml}</div>
