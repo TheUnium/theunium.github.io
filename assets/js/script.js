@@ -31,6 +31,13 @@ const blogPosts = [{
 }];
 
 const projects = [{
+    name: "llmpp",
+    description: "llm inference engine from scratch in c++ with no ai/ml dependencies",
+    link: "https://github.com/TheUnium/llmpp",
+    color: "#7d81fc",
+
+    tags: ["C++"]
+}, {
     name: "ndatmx",
     description: "daemon based project manager, monitors git repos for changes, pulls commits, and runs projects based on its config file",
     link: "https://github.com/TheUnium/ndatmx",
