@@ -1,0 +1,119 @@
+@config {
+    title: "a rant on modern software",
+    author: "john unium the 3rd",
+    date: \today,
+    bibliography: "02-25-2026.bib"
+}
+
+\toc
+
+# I 'dislike' modern software.
+
+I am not going to sit here and pretend that the "good ol days" of computing was literal heaven. Old software
+has absolutely horrible DX, and not to mention, It's unstable as all all hell, with so little documentation
+that it would make the Soviets proud, and you basically need a PhD in ancient runic translations just to
+configure it.
+
+On the other hand... we have modern software. While it fixes a lot of issues with ancient software, modern
+software has been still been enshittified into absolute oblivion. 
+
+The very first sin of modern software is that tt is so incredibly bloated. Why does everything need my
+attention 24/7 or else it explodes? Why does everything today want to be a "platform"? You don't just use a
+version control system anymore. You have to *join the ecosystem*! You don't just use a note taking app. You
+have to use it as a *second brain*!
+
+And the dependency nightmares... Jesus Christ. Look, some dependencies I get. Obviously, you'll need `libc`.
+You might even need something like ImGui if you really don't want to write your own UI boilerplate. But do you
+*really* need a massive, bloated library to parse fucking JSON of all things? YAML? INI files?! You don't need
+eight massive libraries to handle everything for you. In web development, you don't need 5,000,000 NPM or JSR
+(or whatever the hell people are using this week) dependencies to make a damn CLI.
+
+(also... you don't need to make a [mini-game-engine for a god damn CLI either](https://x.com/trq212/status/2014051501786931427))
+
+Which brings me to the devil itself: *Electron*.
+
+Why does *every single utility* need to be Electron? A chat app? Okay, maybe I understand the lazy cross-platform
+argument. But a text editor?? You do not need to bundle an *entire instance of Chromium* just to *EDIT TEXT*. You want
+to check your messages? Please hand over 1.5GB of RAM. We have more compute power in our pockets than it took to send
+people to the moon and back, and we use it to render rounded corners on a `<div>` because developers today are too
+scared to write native code.
+
+## But unium.... the parsers already exist! Why rewrite them!
+
+A friend of mine brought this up recently, and it's a fair point. Parsers for JSON and YAML exist, so there is no
+*functional* reason to remake them from scratch just for the sake of it. They work fine. And, well, the problem isn't
+that we use them. The problem is that modern software development has just devolved into *black boxes calling black boxes*.
+No one actually knows how the things they are writing even work.
+
+Take JSON, for example. It is used literally everywhere. But how many people who use it daily actually know that JSON
+still relies heavily on UTF-16, and that you have to do some funny little pointer magic just to get emojis to parse and
+render correctly?
+
+People use these tools simply because "its whats being used", and they completely ignore the core level of the technology.
+And *that* is an issue. If you don't know how the thing you are writing for works, the shit you write will be slow.
+
+## The Magic Pocket Dimension (aka Modern Memory Management)
+
+This brings me to my absolute biggest gripe. Most high-level developers today treat the heap like a magic pocket dimension
+from Harry Potter[^1].
+
+Because of our obsession with "clean code" and OOP, every piece of data becomes a separate allocation. Oh, you have an array
+of users? GUESS WHAT! It’s not actually an "array of data." It is an array of *pointers* pointing to data scattered literally
+everywhere across your RAM.
+
+Your CPU tries to process it, realizes the data isn't in the L1 cache, and stalls for 200 cycles while it hits main memory
+to fetch it. AND THEN IT DOES IT OVER AND OVER AND OVER AGAIN. If you had just used a SoA or even a simple flat buffer, the
+CPUs hardware prefetcher would have already grabbed that data for you! Our CPUs can do billions of operations a second, and we
+literally use that speed to do *fuck all* because modern developers think "clean code" means hiding the actual data layout.
+
+Oh, but it gets worse. Let's talk about the endless `if/else` chains, the deep inheritance trees, and the endless layers of
+middleware.
+
+GUESS FUCKING WHAT! All of that indirection ruins your CPUs branch predictor! Your CPU is constantly trying to guess where
+the code is going so it can speculatively execute instructions. But because the "Platform™" adds so much abstraction, the
+branch predictor just gives up. Every time you call a "middleware," the hardware has absolutely no idea what code is actually
+going to run until it's too late.
+
+And guess what? THAT MAKES THE CODE SLOW. Who could've guessed?!
+
+## The 5 Layers of Hell (aka Garbage Abstractions)
+
+Modern abstractions are fundamentally broken because they make us forget that computers are physical machines.
+
+Imagine you write something like `int smth = *smthelse;`. You aren't just magically grabbing 4 bytes of data from a static
+physical location in RAM. `*smthelse` isn't real (I promise I'm not schizo). The OS and the MMU[^2] intercept that request. If
+that page of memory has been swapped to your disk, that "simple" memory access just became a massive I/O operation that takes
+100000000x longer.
+
+And even ignoring that, the CPU doesn't just get those 4 bytes. It predicts you'll need the surrounding data, so it pulls an entire
+64-byte cache line into L1. If its prefetcher guesses wrong because your data layout is trash, *boom*, your code is 200 CPU cycles
+slower because you wrote bad code. If the data *did* swap to disk, you're now dealing with the blackest of all black boxes: the
+SSD, which has its *own* CPU and its *own* RAM running a FTL[^3] that maps blocks to NAND cells and performs its own garbage
+collection.
+
+And all of this hardware reality is completely ignored by modern CI/CD pipelines and cloud architectures. Think about the absolute,
+mind numbing horror that is the stack of indirection we consider "normal" today:
+
+1. You have your *code*.
+2. Which runs on a *runtime* (V8 if you are using Node.JS, CPython, JVM, etc etc).
+3. Which is running inside a *container* (docker).
+4. Which is running on a *VM* (AWS EC2, KVM).
+5. Which is managed by a **hypervisor**.
+
+By the time your fuck ass "Hello World" app actually hits physical silicon, it has passed through FIVE DIFFERENT MAPPING TABLES.
+Every single memory access is translated, re-translated, re-translated again, re-translated *again* again, and then re-translated
+*again again again*.
+
+## So... what's the point?
+
+I'm not saying we need to go back to writing everything in Assembly on punch cards, but, what I *am* saying is that "Clean Code"
+shouldn't mean "hiding how the computer actually works behind 50 layers of middleware." The friction of understanding memory, caching,
+and hardware architecture isn't an obstacle to programming, because it *IS* programming. Before you ask "ok... define 'Clean Code'",
+[go read this](https://unium.in/blog/2/02-25-2026/).
+
+Also... stop making text editors in web browsers.
+
+[^1] ive never read harry potter in my life :p
+[^2] memory management unit
+[^3] flash translation unit
+
