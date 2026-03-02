@@ -1,4 +1,10 @@
 const blogPosts = [{
+    title: "A rant on Modern Software.",
+    date: "02/03/26",
+    excerpt: "While it fixes a lot of issues with old software... modern software has been still been enshittified into absolute oblivion.",
+    tags: ["Writing"],
+    link: "https://unium.in/blog/2/03-02-2026/index.html"
+}, {
     title: "No one writes good code anymore. Why? AI.",
     date: "25/02/26",
     excerpt: "Your brain is a muscle. If you don't train it, it will get weaker. The more AI you use, the dumber you get.",
