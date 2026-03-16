@@ -37,6 +37,27 @@ const blogPosts = [{
 }];
 
 const projects = [{
+    name: "dos-ffdb",
+    description: "a super duper fast, flat file database engine written in c for turbo c 2.01",
+    link: "https://codeberg.org/TheUnium/dos-ffdb",
+    color: "#23989",
+    image: "assets/img/projects/dos-ffdb.png",
+    tags: ["C"]
+}, {
+    name: "dppRPC",
+    description: "lightweight open source implementation of discord's local RPC servers for desktop clients, inspired by arRPC",
+    link: "https://github.com/TheUnium/roverpp",
+    color: "#ff8890",
+    image: "assets/img/projects/dpprpc.png",
+    tags: ["C++"]
+}, {
+    name: "roverpp",
+    description: "lightweight vulkan implicit layer made to render external overlay textures on top of vk applications",
+    link: "https://github.com/TheUnium/roverpp",
+    color: "#32f0f3",
+    image: "assets/img/projects/roverpp.png",
+    tags: ["C++"]
+}, {
     name: "llmpp",
     description: "llm inference engine from scratch in c++ with no ai/ml dependencies",
     link: "https://github.com/TheUnium/llmpp",
