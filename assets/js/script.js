@@ -46,49 +46,49 @@ const projects = [{
 }, {
     name: "dppRPC",
     description: "lightweight open source implementation of discord's local RPC servers for desktop clients, inspired by arRPC",
-    link: "https://github.com/TheUnium/roverpp",
+    link: "https://codeberg.com/TheUnium/roverpp",
     color: "#ff8890",
     image: "assets/img/projects/dpprpc.png",
     tags: ["C++"]
 }, {
     name: "roverpp",
     description: "lightweight vulkan implicit layer made to render external overlay textures on top of vk applications",
-    link: "https://github.com/TheUnium/roverpp",
+    link: "https://codeberg.com/TheUnium/roverpp",
     color: "#32f0f3",
     image: "assets/img/projects/roverpp.png",
     tags: ["C++"]
 }, {
     name: "llmpp",
     description: "llm inference engine from scratch in c++ with no ai/ml dependencies",
-    link: "https://github.com/TheUnium/llmpp",
+    link: "https://codeberg.com/TheUnium/llmpp",
     color: "#7d81fc",
     image: "assets/img/projects/llmpp.png",
     tags: ["C++"]
 }, {
     name: "ndatmx",
     description: "daemon based project manager, monitors git repos for changes, pulls commits, and runs projects based on its config file",
-    link: "https://github.com/TheUnium/ndatmx",
+    link: "https://codeberg.com/TheUnium/ndatmx",
     color: "#F34B7D",
     image: "assets/img/projects/ndatmx.png",
     tags: ["C++"]
 }, {
     name: "mathplot",
     description: "math plotting tui with support for multiple functions, finding derivatives and integral, etc using ncurses",
-    link: "https://github.com/TheUnium/mathplot",
+    link: "https://codeberg.com/TheUnium/mathplot",
     color: "#ef4444",
     image: "assets/img/projects/mathplot.png",
     tags: ["C"]
 }, {
     name: "3d-nolib",
     description: "a simple 3d tech demo with quake like movement without libc or any other libraries (x11 only)",
-    link: "https://github.com/TheUnium/3d-nolib",
+    link: "https://codeberg.com/TheUnium/3d-nolib",
     color: "#fecaca",
     image: "assets/img/projects/3d-nolib.png",
     tags: ["C"]
 }, {
     name: "hello-world",
     description: "dumb proof of context demonstrating a drm-protected... \"Hello, World!\", and impls several anti-analysis techniques, written without libc",
-    link: "https://github.com/TheUnium/hello-world",
+    link: "https://codeberg.com/TheUnium/hello-world",
     color: "#2dd4bf",
     image: "assets/img/projects/hello-world.png",
     tags: ["C"]
@@ -102,14 +102,14 @@ const projects = [{
 }, {
     name: "glyphin",
     description: "advanced multipurpose discord bot made with discord.js",
-    link: "https://glyphin.hamium.xyz/",
+    link: "https://glyphin.unium.in/",
     color: "#fde047",
     image: "assets/img/projects/glyphin.png",
     tags: ["JS"]
 }, {
     name: "rnux",
     description: "app launcher that actually looks good by default",
-    link: "https://github.com/TheUnium/rnux",
+    link: "https://codeberg.com/TheUnium/rnux",
     color: "#ef4444",
     image: "assets/img/projects/rnux.png",
     tags: ["C++"]
