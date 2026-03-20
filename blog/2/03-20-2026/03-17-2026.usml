@@ -1,0 +1,141 @@
+@config {
+    title: "privacy is a premium feature. it shouldnt be.",
+    author: "johnathon unium",
+    date: \today,
+    bibliography: "empty.bib"
+}
+
+\toc
+
+# privacy is a premium feature now. it shouldnt be.
+
+*NOTE: I refuse to call Facebook "Meta".*
+
+Before I start this "blog post" (more of a rant), let me be absolutely clear: I am not some off-the-grid
+survivalist, living in a cabin in the middle of nowhere who is writing a manifesto, and I don't want others
+to "return to nature" either. I use Discord, I use Youtube, I am, by every measurable metric, part of the
+very problem I am describing here. But... that's kind of the whole point, isn't it? The system that governs
+us is designed so that *you cannot opt out without losing something fundamental*.
+
+If you want privacy in 2026, you need one (or, ideally all) of these things:
+
+// NOTE: fix multiline lists bc shits fucked
+1. *Money.* Subscriptions to [Mullvad](https://mullvad.net), [Proton](https://proton.me), [Tuta](https://tuta.com), a decent VPN, maybe even your own hardware. Privacy-respecting services aren't free because *YOU* aren't the product, which means someone has to actually pay for the servers.
+2. *Technical Knowledge.* You need to know how to setup and use Linux (granted, this has gotten a lot easier over the years, but it is still a barrier) or a BSD distro if you really hate yourself. You need to understand what the hell a "firewall" is, what "browser fingerprinting" is, and a dozen other things that 99% of people will *never* care about.
+3. *Social Isolation.* This is probably *the* biggest hurdle. Many people simply say "hey, just use [[matrix]](https://matrix.org) and [Signal](https://signal.org)!", but the truth is: they don't work. Well, they do work but almost no average person will use something like matrix. Even Signal, which is simple to use, is not popular in most countries (e.g., India!!) because *everyone* is on Whatsapp already.
+
+You need all of these three things to even *begin* to have privacy online, and even then, you are still
+leaking data in all sorts of way you probably don't know about or didn't even think was possible.
+
+Like, companies are able to infer your mental state, your political opinions, and even your relationship
+status based on your shopping patterns. But hey, that's easy to do (relatively speaking). You know what's
+harder? Tracking you based on gait recognition. Or, tracking you before you even ever log in to create an
+account. And unfortunately, both of these things exist and are possible.
+
+## But the company said "we take your privacy seriously"!
+
+Every single time a company says this, what they *actually* mean is: *"we will make it slightly more
+annoying for you to find the opt out button, but we are still going to sell your behavioral profile
+to the highest bidder anyways, and there is nothing you can do :D!"*
+
+This isn't even cynicism, it's just observable reality. When was the last time you saw a company say
+"we take your privacy seriously" and then *actually* do something meaningful about it? They put it in a blog
+post after a data breach, they update their privacy policy to be 47 pages longer, and then they go right back
+to harvesting anything and everything you do.
+
+The worst part is, everyone cares about privacy. *Everyone*. They just don't know how much they care until
+it's too late. People say "but, I have nothing to hide!" right up until the moment their search history,
+location data, or private messages get leaked, sold, or used against them. Then suddenly privacy matters a
+whole lot.
+
+We have basically been gaslit into believing that constant, 24/7 surveillance is just *"the cost of
+being online."* but, it isn't. It was never supposed to be.
+
+## Uh huh.... cool, so how did we get here?
+
+Well... it's complicated.
+
+It's not like humanity collectively woke up one morning and decided *"you know what sounds great? selling
+every intimate detail of our lives to massive corporations!"*. No one really agreed to this. What happened
+in reality was essentially a *very slow* and *very quiet* "take-over".
+
+It happened every time a *"free"* email account was created. Just one more social media profile! Just *one
+more* "convenient" smart device for your "smart home"!! Just *ONE* more app that *NEEDS* access to your
+contacts, location, microphone, and your firstborn child's soul!!!
+
+By the time people started to realize the extent of the tracking imposed onto us by our tech overlords, the
+infrastructure was already built, and we had already became dependent on them for:
+
+- *Work:* Google Workspace, Slack, Microsoft 365, Zoom, etc.
+- *School:* Zoom (again...), Microsoft Teams, Google Classroom, Canvas, etc.
+- *BASIC Human Communication:* Whatsapp, Discord, Instagram, iMessage, etc.
+
+Basically, what I'm trying to say is that the dependency came first and awareness later. And by the time
+awareness spread, opting out of these services meant opting out of *society* as a whole, and, at least in my
+personal opinion, it has intentionally been designed to be that way.
+
+## But isn't the EU fighting for privacy? The regulators will fix this!
+
+It's *trying*, and unfortunately *failing* to some extent.
+
+Let me be honest: I think most of the EU's privacy legislation is simply theater. I'm not claiming all of it
+is, but most of it definitely is. What the GDPR and its various cousins have *actually* accomplished is turning
+surveillance into *"consensual" surveillance*. Before their laws, companies harvested your data silently in the
+background, and now, the only difference is that they shove a massive cookie banner in your face, you click
+"accept all" because you're trying to read an article or, god forbid, *talk to other humans*, and suddenly they
+have your **legal consent** to basically spy on you.
+
+\component{satire_cookies}
+
+There you go! *Congratulations!* You have been *"protected"*!
+
+### But the fines...
+
+When the EU fines Google or Facebook hundreds of millions of euros, these companies treat it like a parking ticket.
+Sure it's not a sum that won't affect them, but in the grand scheme of things, it's basically a rounding error.
+
+I am not pulling this sentiment out of my ass either, the largest fine the EU has dished was 4.34 *billion*
+euros in 2018 over Android. Anyways... in 2018 their profit was 30.7 billion USD. Next year, in 2019, their
+profit was 34.3 billion USD . Two years later (2020)... their profit was 40.3 *BILLION* USD, aka, roughly 35
+*BILLION* EUROS. Best part? They didn't even change their practice! The reason they were fined didn't change,
+Google still controls search, ads, and Android distribution!
+
+It's useless. They pay the fine, write a press release about how they're
+[*"committed to user privacy"*](https://www.facebook.com/business/news/facebooks-commitment-to-data-protection-and-privacy-in-compliance-with-the-gdpr)[^1],
+and then go right back to doing exactly what they were doing before, except now it's "legal" because you clicked
+a button.
+
+### But what about the right to be forgotten?
+
+Well, it's cool but kind of useless... instead of *banning the practice of selling user behavioral profiles to data
+brokers*, the EU decided the solution was to let users *ask* companies to delete their data. sounds reasonable in
+theory, but in practice, it goes something like this:
+
+1. Go to settings.
+2. Click "privacy".
+3. Toggle these 8 switches.
+4. Click accept -> accept -> decline -> accept -> accept.
+5. Press up up down down left right left right B A spacebar.
+6. Repeat this process for every device you own.
+7. Wait exactly 8 days, 9 hours, 34 minutes, and 38 seconds.
+8. Do it all again to confirm.
+
+And even after all of that... your data has *already been sold*. By the time you navigate that opt-out maze, your
+behavioral profile has been purchased by 50 different companies and redistributed through 50 different data brokers.
+What are *you* going to do, email each one individually? *"Heyyyy, i know you bought this data from company A, but I
+told them i wanted privacy, so could you please delete the profile you paid money for? Pretty please????"*
+
+It's not really about protecting you. It was never about protecting you. It's about making sure the *paperwork*
+says you were protected, but that's about as far as the protection goes.
+
+## ...yeah, i know.
+
+I know how this sounds. Trust me, all I have to say is that I am not currently writting about how the
+industrial revolution was a disaster for humanity from a wooden shack in the forest. But I am close :p
+
+And *that* is why privacy is a premium feature. Not because it's "technically difficult to implement" (it
+isn't), not because companies can't "afford to respect it" (they can), but because your data is worth more
+to them than your trust, and the entire system, from the apps to the laws to the social norms, have been
+engineered to make sure you keep handing it over.
+
+[^1] ironically, just *two* months after this, the cambridge analytica scandal broke (march 2018)
