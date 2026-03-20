@@ -3,7 +3,7 @@ const blogPosts = [{
     date: "20/03/26",
     excerpt: "The systems that governs us is designed so that you cannot opt out without losing something fundamental.",
     tags: ["Writing"],
-    link: "https://unium.in/blog/2/20-02-2026/index.html"
+    link: "https://unium.in/blog/2/20-03-2026/index.html"
 }, {
     title: "A rant on Modern Software.",
     date: "02/03/26",
