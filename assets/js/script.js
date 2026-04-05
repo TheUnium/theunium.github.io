@@ -53,7 +53,7 @@ const projects = [{
     name: "dos-ffdb",
     description: "a super duper fast, flat file database engine written in c for turbo c 2.01",
     link: "https://codeberg.org/TheUnium/dos-ffdb",
-    color: "#23989",
+    color: "#42bd41",
     image: "assets/img/projects/dos-ffdb.png",
     tags: ["C"]
 }, {
