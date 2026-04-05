@@ -43,6 +43,13 @@ const blogPosts = [{
 }];
 
 const projects = [{
+    name: "The Seafarer",
+    description: "news website for nagara suharaya, a stoneworksmc nation, ran by the citizens and the government",
+    link: "https://seafarer.unium.in/",
+    color: "#7dd3fc",
+    image: "assets/img/projects/seafarer.webp",
+    tags: ["JS"]
+}, {
     name: "dos-ffdb",
     description: "a super duper fast, flat file database engine written in c for turbo c 2.01",
     link: "https://codeberg.org/TheUnium/dos-ffdb",
@@ -132,13 +139,6 @@ const projects = [{
     link: "https://www.npmjs.com/package/bloggy-md",
     color: "#86efac",
     image: "assets/img/projects/bloggy.png",
-    tags: ["JS"]
-}, {
-    name: "the seafarer",
-    description: "news website for stoneworks mc server (discontinued)",
-    link: "#",
-    color: "#7dd3fc",
-    image: "assets/img/projects/seafarer.png",
     tags: ["JS"]
 }];
 
